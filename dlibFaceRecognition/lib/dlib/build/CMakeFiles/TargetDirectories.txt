@@ -1,0 +1,5 @@
+/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/dlib.dir
+/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/package.dir
+/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/install.dir
+/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/ALL_BUILD.dir
+/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/ZERO_CHECK.dir

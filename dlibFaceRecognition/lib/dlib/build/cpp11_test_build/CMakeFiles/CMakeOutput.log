@@ -1,0 +1,104 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_05f13 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_05f13 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Computing target dependency graph and provisioning inputs
+
+Create build description
+Build description signature: 99477894ee6b2ba3c40b033282e55e5e
+Build description path: /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/XCBuildData/99477894ee6b2ba3c40b033282e55e5e-desc.xcbuild
+
+note: Building targets in dependency order
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build
+
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug
+
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/EagerLinkingTBDs
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/EagerLinkingTBDs
+
+WriteAuxiliaryFile /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/cmTC_05f13.LinkFileList (in target 'cmTC_05f13' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm
+    write-file /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/cmTC_05f13.LinkFileList
+
+CompileC /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/src.o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/src.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_05f13' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-macos12.3 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -DCMAKE_INTDIR\=\"Debug\" -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug/include -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/DerivedSources-normal/x86_64 -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/DerivedSources/x86_64 -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/DerivedSources -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug -std\=c++11 -MMD -MT dependencies -MF /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/src.d --serialize-diagnostics /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/src.dia -c /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/src.cxx -o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/src.o
+
+Ld /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug/cmTC_05f13 normal (in target 'cmTC_05f13' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target x86_64-apple-macos12.3 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/EagerLinkingTBDs -L/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/EagerLinkingTBDs -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug -filelist /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/cmTC_05f13.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/cmTC_05f13_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/build/cmTC_05f13.build/Debug/Objects-normal/x86_64/cmTC_05f13_dependency_info.dat -o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug/cmTC_05f13
+
+RegisterExecutionPolicyException /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug/cmTC_05f13 (in target 'cmTC_05f13' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm
+    builtin-RegisterExecutionPolicyException /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-v6Z3dm/Debug/cmTC_05f13
+
+** BUILD SUCCEEDED **
+
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_02bc1 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_02bc1 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Computing target dependency graph and provisioning inputs
+
+Create build description
+Build description signature: 984f9becb8571c65d10474e58e82b47a
+Build description path: /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/XCBuildData/984f9becb8571c65d10474e58e82b47a-desc.xcbuild
+
+note: Building targets in dependency order
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug
+
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build
+
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/EagerLinkingTBDs
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/EagerLinkingTBDs
+
+WriteAuxiliaryFile /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/cmTC_02bc1.LinkFileList (in target 'cmTC_02bc1' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d
+    write-file /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/cmTC_02bc1.LinkFileList
+
+CompileC /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/src.o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/src.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_02bc1' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-macos12.3 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -DCMAKE_INTDIR\=\"Debug\" -DCOMPILER_SUPPORTS_CXX0X -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug/include -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/DerivedSources-normal/x86_64 -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/DerivedSources/x86_64 -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/DerivedSources -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug -std\=c++0x -MMD -MT dependencies -MF /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/src.d --serialize-diagnostics /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/src.dia -c /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/src.cxx -o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/src.o
+
+Ld /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug/cmTC_02bc1 normal (in target 'cmTC_02bc1' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target x86_64-apple-macos12.3 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/EagerLinkingTBDs -L/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/EagerLinkingTBDs -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug -filelist /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/cmTC_02bc1.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/cmTC_02bc1_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/build/cmTC_02bc1.build/Debug/Objects-normal/x86_64/cmTC_02bc1_dependency_info.dat -o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug/cmTC_02bc1
+
+RegisterExecutionPolicyException /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug/cmTC_02bc1 (in target 'cmTC_02bc1' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d
+    builtin-RegisterExecutionPolicyException /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/CMakeScratch/TryCompile-lgve0d/Debug/cmTC_02bc1
+
+** BUILD SUCCEEDED **
+
+
+
+Source file was:
+int main() { return 0; }
+

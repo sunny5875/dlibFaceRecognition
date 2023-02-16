@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in test_if_libpng_is_broken, no dependencies
+libpng_test in test_if_libpng_is_broken, depends on:
+ZERO_CHECK in test_if_libpng_is_broken (explicit)
+ALL_BUILD in test_if_libpng_is_broken, depends on:
+libpng_test in test_if_libpng_is_broken (explicit)
+ZERO_CHECK in test_if_libpng_is_broken (explicit)

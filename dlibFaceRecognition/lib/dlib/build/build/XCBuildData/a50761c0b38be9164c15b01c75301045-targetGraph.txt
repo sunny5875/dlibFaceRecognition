@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in dlib, no dependencies
+dlib in dlib, depends on:
+ZERO_CHECK in dlib (explicit)
+ALL_BUILD in dlib, depends on:
+ZERO_CHECK in dlib (explicit)
+dlib in dlib (explicit)

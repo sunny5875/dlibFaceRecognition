@@ -1,0 +1,1462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		295643282D494956845655D8 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB297667F01643DAA5BFA7C8 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				FCA1FEA320454979819E9505 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		2C48153A1E934E40B779E568 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5B43F994C8804DB2B3D56CBC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6C09FD1832907A70B09E3E76 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				8A5B66222EBD4771ACB08D0E /* PBXTargetDependency */,
+				36DFC7AA5AA74A83B4A52424 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		BA477325EACB48659CF60FAF /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A50B16D5EB5C4C708962C684 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D528552DF6C840C7B251E766 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EF988A3CD08144839F58757C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1CEE74272FE34171AAF7F426 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C935515C8382E878F4170140 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0570EBD10A4B4BC183E129C8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmainct.c */ = {isa = PBXBuildFile; fileRef = 385794AF25B84348849E780B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmainct.c */; };
+		0632658999A74B3A94506631 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_png.cpp */ = {isa = PBXBuildFile; fileRef = 661C4EE5A7B84F66A8E0907A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_png.cpp */; };
+		0890821665F34330AE084795 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = 89D6B99826F242908B89B3EF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcdctmgr.c */; };
+		09A34BDAFE544B6FBFD0B224 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/async.cpp */ = {isa = PBXBuildFile; fileRef = A274265DA90E444BB706B618 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/async.cpp */; };
+		0BD489F78FED4308BD876529 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = B912121125E3456DA5C8475E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_2.cpp */; };
+		0FF0AB112CD844D2A1381D43 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/base_widgets.cpp */ = {isa = PBXBuildFile; fileRef = C19A1FFF5DD547B7B38B28A4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/base_widgets.cpp */; };
+		136416DA3EA541B394F7CBB0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapistd.c */ = {isa = PBXBuildFile; fileRef = F0C34C5A86BC4D6EBDEC37F7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapistd.c */; };
+		15080EB4DB4F44EDBE7E3E13 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatadst.c */ = {isa = PBXBuildFile; fileRef = B940404C86F244BDA1613CA7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatadst.c */; };
+		161BDE9BE3B441C9873CB687 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/drawable.cpp */ = {isa = PBXBuildFile; fileRef = E414BDE45C164D7F94801737 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/drawable.cpp */; };
+		163EE5234A7C45AF976B6ADE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 7D9863F5EAE2490E804ECF36 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_1.cpp */; };
+		16E366C68D5646B8A9365801 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/style.cpp */ = {isa = PBXBuildFile; fileRef = BDFE737CFD6A4020B6D25BEE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/style.cpp */; };
+		1F58C45D93B04567A3EB038E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/cifar.cpp */ = {isa = PBXBuildFile; fileRef = 2D0AB556C42746D98CA46287 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/cifar.cpp */; };
+		1FE586688A374AD187564B43 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_kernel.cpp */ = {isa = PBXBuildFile; fileRef = 2F89D557FC93434B9D7AE616 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_kernel.cpp */; };
+		23D918693FA841A9ABF22F33 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_http.cpp */ = {isa = PBXBuildFile; fileRef = 1C1BE670C6CF491BB9A0D60E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_http.cpp */; };
+		2AFC00A9DA1140F09A59728A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdpostct.c */ = {isa = PBXBuildFile; fileRef = D8ABE9641479428081899C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdpostct.c */; };
+		2C8787D45DF5417A98F43C29 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapimin.c */ = {isa = PBXBuildFile; fileRef = 98C58F03E87249B59F779DB8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapimin.c */; };
+		2D8EDBAF1EBD4DB0A228BB49 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_config_file.cpp */ = {isa = PBXBuildFile; fileRef = F65472D7A5484EE3901FA382 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_config_file.cpp */; };
+		2DD7A89935154AE6AF82FD52 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jaricom.c */ = {isa = PBXBuildFile; fileRef = FA649676FC714B72A20041BB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jaricom.c */; };
+		2FC97AA17C834DB7B8B9E0A0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapistd.c */ = {isa = PBXBuildFile; fileRef = 7575D6B6D73B484FAA0B5440 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapistd.c */; };
+		31CB1718B42B4623BEBFF5A8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jchuff.c */ = {isa = PBXBuildFile; fileRef = 346FB72D1A2643209E85FC58 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jchuff.c */; };
+		3469923BEFEE4590813746B5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/extra_logger_headers.cpp */ = {isa = PBXBuildFile; fileRef = A4C5FD6AF29A4AE081284F1E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/extra_logger_headers.cpp */; };
+		35094402491447EC99D74005 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcarith.c */ = {isa = PBXBuildFile; fileRef = 53A51A4F5BB94FBDBDE04479 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcarith.c */; };
+		370EB1FF8C0F403B8F455FF3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = 451ED72FD9184291B8A6E646 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcoefct.c */; };
+		3F8E421D9D74406C8EE50294 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bit_stream/bit_stream_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 452EE00C509A427EA2200D1A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bit_stream/bit_stream_kernel_1.cpp */; };
+		451C76E88B874AACA4FF8B07 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/canvas_drawing.cpp */ = {isa = PBXBuildFile; fileRef = 9F1D68969617423F8AA6044D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/canvas_drawing.cpp */; };
+		48824CD615FA4C7E9DEE1425 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctfst.c */ = {isa = PBXBuildFile; fileRef = F2396A0A85EB4187BDD852B1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctfst.c */; };
+		49107191791A4B7F9437C59F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcomapi.c */ = {isa = PBXBuildFile; fileRef = 7F376E4A17AB4C90A0CF401B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcomapi.c */; };
+		49935E7C65A64E9799A428F3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/image_dataset_metadata.cpp */ = {isa = PBXBuildFile; fileRef = F54B781630C148F1A92B5540 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/image_dataset_metadata.cpp */; };
+		4CC2E2C9F38E448E97676C02 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = CA01D21F8B7E45ED94795917 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp */; };
+		4D2D7A448F3E457F9F303C9A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapimin.c */ = {isa = PBXBuildFile; fileRef = BFCCBC888A2C4D4DB8062AE8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapimin.c */; };
+		4D794C2700EB42A59F193F64 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant1.c */ = {isa = PBXBuildFile; fileRef = 583F0AAD01134FE4AD85A063 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant1.c */; };
+		4E316BE98AE74A61A3C40E54 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/test_for_odr_violations.cpp */ = {isa = PBXBuildFile; fileRef = 5833E0CC204B45439E1E15C5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/test_for_odr_violations.cpp */; };
+		556107A9C7954052AD9D68C1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcsample.c */ = {isa = PBXBuildFile; fileRef = 6C7A78D567964024B0C83BD1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcsample.c */; };
+		5696CDD8078F449788D34924 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcparam.c */ = {isa = PBXBuildFile; fileRef = 6BAAD7C5B8FB4045AB2BEC64 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcparam.c */; };
+		573297A3E4A04A188E7EDE78 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = 21F058703E584C789836AF46 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_2.cpp */; };
+		57445E78BCEC4A1CB5C8CB31 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/global_optimization/global_function_search.cpp */ = {isa = PBXBuildFile; fileRef = 1BA51ADB7621425E9BECE9D1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/global_optimization/global_function_search.cpp */; };
+		581EB6FECAC542D4832632C2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threaded_object_extension.cpp */ = {isa = PBXBuildFile; fileRef = 231B1A12B5454AE1A931BC9A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threaded_object_extension.cpp */; };
+		5859A964222940DE87A7AB1C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_extensions.cpp */ = {isa = PBXBuildFile; fileRef = 41CCD6B163F54C75A34560D3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_extensions.cpp */; };
+		5A50774E6F9341C8A5AE4A5A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/fonts.cpp */ = {isa = PBXBuildFile; fileRef = 18315479359242EBB0CE1644 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/fonts.cpp */; };
+		6087F226303649C9BB778E91 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdinput.c */ = {isa = PBXBuildFile; fileRef = 086646CEEC0E492C8C0B8844 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdinput.c */; };
+		60B9234EA5F54042ACEE91A0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf.cpp */ = {isa = PBXBuildFile; fileRef = 752C2AB8F5C8488496A29D18 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf.cpp */; };
+		63370B3B82F3447094D87628 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_jpeg.cpp */ = {isa = PBXBuildFile; fileRef = 27175C372EA64B49B95278C4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_jpeg.cpp */; };
+		68825AEE87094A0BA02BAB79 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/filtering/kalman_filter.cpp */ = {isa = PBXBuildFile; fileRef = 4DB32EB6119249DFA957DA6F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/filtering/kalman_filter.cpp */; };
+		6AB1E052A78D4489B729CF9C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/unicode/unicode.cpp */ = {isa = PBXBuildFile; fileRef = 709D7705853A419CB3E32F2E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/unicode/unicode.cpp */; };
+		6D83FF0F4464494D8424D843 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = D98355C523BD4D028D58B88E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_1.cpp */; };
+		70BF78EE44E643ECAADCC99A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = C1B0F13CDAB0469EA5F934FC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp */; };
+		7440A59E484C40E989358CF5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcinit.c */ = {isa = PBXBuildFile; fileRef = 73AC47447D4748D290C46FFF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcinit.c */; };
+		7B4991D2F9E14E6DBD1AF73A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/base64/base64_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 45068606C82D49218C205D88 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/base64/base64_kernel_1.cpp */; };
+		847DDCFA59024F55B82825C4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = 193865F8BEC04E1B8CDB89D2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp */; };
+		88C6FA3A7522497AB66FD0C1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_iostream.cpp */ = {isa = PBXBuildFile; fileRef = 682F15CB212D48D5B521E3F4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_iostream.cpp */; };
+		88CDC1C04D8B448F819F7F0F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccolor.c */ = {isa = PBXBuildFile; fileRef = ED6B3B1A14134064B4928D50 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccolor.c */; };
+		8CD602209A95447581A4DC25 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmarker.c */ = {isa = PBXBuildFile; fileRef = 75D92B02016D4AD0ADF602F9 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmarker.c */; };
+		8D833EC4C9EA4342B5F0B754 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdhuff.c */ = {isa = PBXBuildFile; fileRef = A46BA0A5E05E48F1AC7B646D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdhuff.c */; };
+		9402881E28DE48D7BF244C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccoefct.c */ = {isa = PBXBuildFile; fileRef = 443078BCDFEE4DF78A7BE6B1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccoefct.c */; };
+		9425F781DD804D229DBD037D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdsample.c */ = {isa = PBXBuildFile; fileRef = 63B58B2DC41C4871AF90C39A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdsample.c */; };
+		947718CA86A74162B3699185 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = D43FC6A709A6424EBE093F70 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_2.cpp */; };
+		96F571F416B043D19FE1DEF6 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 1DF203F0A5E84A0A8A6CD3DB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_1.cpp */; };
+		983B293B14A9476B9EC3006F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcolor.c */ = {isa = PBXBuildFile; fileRef = 8CB1BF295D704E398BCE346A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcolor.c */; };
+		9B4D5403C0FB4EA58F094632 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = F10227912DB749328C4869FB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctfst.c */; };
+		9CA465169423470F8D3832BE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmarker.c */ = {isa = PBXBuildFile; fileRef = EE75052394B14718B73EFB08 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmarker.c */; };
+		9E6096C7972F4380B10A751E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_extensions.cpp */ = {isa = PBXBuildFile; fileRef = 73D1AF761911423588AE4B38 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_extensions.cpp */; };
+		A35BFF23DE90484A961E8CE7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/md5/md5_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 38617A8073D146B4A6CAEFAD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/md5/md5_kernel_1.cpp */; };
+		A3D7C3DDE4B24C4D9C29FDF2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/multithreaded_object_extension.cpp */ = {isa = PBXBuildFile; fileRef = 0E12463D5C234AAAB7572322 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/multithreaded_object_extension.cpp */; };
+		A403851CA5284E6A89696EF8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/timer/timer.cpp */ = {isa = PBXBuildFile; fileRef = 7B880592A2FF4C6F9E37A6FD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/timer/timer.cpp */; };
+		A78A8C3EFFB64DB88C6D296A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = C62CCF87A98A4E398500C1A2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jddctmgr.c */; };
+		A8682FF23AFD4B109A563C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcprepct.c */ = {isa = PBXBuildFile; fileRef = F19A025D0F314D2D8CD3ED6D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcprepct.c */; };
+		AA89051E0F774326AA35F59E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = 44DF2C0779AC430687F2D37F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatasrc.c */; };
+		AB4949E83F1648A1BEAF566C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/stack_trace.cpp */ = {isa = PBXBuildFile; fileRef = C0542CB7C6B54AE7A62F14A1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/stack_trace.cpp */; };
+		ABDF858A519D4FA9A504E1C0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/linker/linker_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 37F3850E205B4CFA89187A86 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/linker/linker_kernel_1.cpp */; };
+		AE301FB843EE44E2A28E33D5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/svm/auto.cpp */ = {isa = PBXBuildFile; fileRef = D0ADEE9A6B4542ECBF155F1F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/svm/auto.cpp */; };
+		B1428E657BFB424CA09D08EA /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/widgets.cpp */ = {isa = PBXBuildFile; fileRef = 28974E44D67C464890222838 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/widgets.cpp */; };
+		B404EE466B8840A48FA02980 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = 031820BEE88F4A79930C129E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemmgr.c */; };
+		B852D08F45C344DAB71A1A0A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = 6412014A5C714DAB974A9D61 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_2.cpp */; };
+		B9CBF8B6DC3D4A56A4053197 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp */ = {isa = PBXBuildFile; fileRef = C137792D610D472CBC093460 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp */; };
+		BBE1DBF46F6947B099E1182C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctint.c */ = {isa = PBXBuildFile; fileRef = 92902C0995D546B39E3C431D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctint.c */; };
+		BCDA35EF7B5342038ECBE7A2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/png_loader.cpp */ = {isa = PBXBuildFile; fileRef = 736E8CE5E39746C3AF8EC3AB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/png_loader.cpp */; };
+		BDC5D5DAAC944152843A6072 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmainct.c */ = {isa = PBXBuildFile; fileRef = B08431D529B1409E9B4E9BF3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmainct.c */; };
+		C23BCECFC1C54240BC3DF1AC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bsp/bsp.cpp */ = {isa = PBXBuildFile; fileRef = 19ECB0B157734729A2743ADE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bsp/bsp.cpp */; };
+		C39F42E2E53B46D3B33D12CD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/tokenizer/tokenizer_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 1892B82D47DA4DB3ABDF8F18 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/tokenizer/tokenizer_kernel_1.cpp */; };
+		C3EC3A7E1ABD450490D005FD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = F3911A082A6D475E83FEBE30 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp */; };
+		C5005A2C8C07410F9497A934 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmaster.c */ = {isa = PBXBuildFile; fileRef = AE24DE98C70B4EA29C1B74BB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmaster.c */; };
+		C7148D116C8D4A1DAA4CF322 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctflt.c */ = {isa = PBXBuildFile; fileRef = CF3DD64558A049BFBC490F6C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctflt.c */; };
+		CB5E7FBAD7CB4C828A4D684B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/cpu_dlib.cpp */ = {isa = PBXBuildFile; fileRef = 5B63838D91A643F8A467C6CC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/cpu_dlib.cpp */; };
+		CB947AEF5D7449DD93E5A0DF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant2.c */ = {isa = PBXBuildFile; fileRef = 3F84A21C0BB24B08BB82E37C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant2.c */; };
+		CDE1DDEEFBEC40C9849FCB52 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jutils.c */ = {isa = PBXBuildFile; fileRef = AA6E5DE3C8EA4E0E9E320B05 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jutils.c */; };
+		CE1C37DEDD6247ED95AB0ECB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmaster.c */ = {isa = PBXBuildFile; fileRef = D163949C93D54E5EA69AE961 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmaster.c */; };
+		CFF27480710845E188E6D203 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 7EB2F2C7EC804FF6981C2538 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_kernel_1.cpp */; };
+		D64AF8CA0FC54E91BC329512 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/tensor_tools.cpp */ = {isa = PBXBuildFile; fileRef = 91345BF4BEBF44BC955AAC85 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/tensor_tools.cpp */; };
+		D8783793CB8349FB83BC5466 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = 9B092D8779534BEE8250CAE5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_2.cpp */; };
+		D99D6CC1547D40D5B37F07E3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdarith.c */ = {isa = PBXBuildFile; fileRef = C3A31F88C6F44851BF66A063 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdarith.c */; };
+		DB1F4B14E9984BB1BFB877CF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = B2ACC9D1591148B78B3855B0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_1.cpp */; };
+		DC3C981F75A44DECB2065619 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/thread_pool_extension.cpp */ = {isa = PBXBuildFile; fileRef = FFE05675731C424894A46B7B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/thread_pool_extension.cpp */; };
+		DFE37061C74345F1AA5E9122 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctint.c */ = {isa = PBXBuildFile; fileRef = EAF64DF1C8794F72A32D2471 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctint.c */; };
+		E3A4E1697A5B42719203D49A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_2.cpp */ = {isa = PBXBuildFile; fileRef = 51C3DD03263649CBB7626C04 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_2.cpp */; };
+		E805518FAE4B4689B53ECBC7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/jpeg_loader.cpp */ = {isa = PBXBuildFile; fileRef = 21C3AC12BD374915A2A94F85 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/jpeg_loader.cpp */; };
+		E8F5E40F22B94ABEA41E0FC7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/mnist.cpp */ = {isa = PBXBuildFile; fileRef = D43A59ECF40F4D1180EE2FCB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/mnist.cpp */; };
+		EEA79C5C34EF44E280C86E0C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A00D6A45E2E54416800007CB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/CMakeLists.txt */; };
+		F16DC0DDFEFD4B1792825CB5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jerror.c */ = {isa = PBXBuildFile; fileRef = 84ED3FE824184A6D981BC79A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jerror.c */; };
+		F264AF3D2F2E41B1A360F616 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = 34062E874A2F4117843B4048 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemnobs.c */; };
+		F6675B8E8F3F431C834ACD1E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 10DEEFFBCD884A2086E1E40B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_1.cpp */; };
+		F775759D21804F848724E79C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = ED5A8FDA2DCD4CFBBF947A69 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctflt.c */; };
+		F79AAEA8166A4BE8A8AD919E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_shared.cpp */ = {isa = PBXBuildFile; fileRef = E6762FAFE9E54EA6B109600A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_shared.cpp */; };
+		F856E4FC8ED146DDBAD9D59E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_1.cpp */ = {isa = PBXBuildFile; fileRef = 5F8B5B4DEAAA4122B689EB5B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_1.cpp */; };
+		F8B78EF3A34C42B1B5B9BD71 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmerge.c */ = {isa = PBXBuildFile; fileRef = CD997FD4F9E64190906540DA /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmerge.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		A59DEE6EA1EE4EC584BF7E5A /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B8BDA1460A804B25854CDAC4 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		BFB4B5D6BE884FFA9403D16F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		F7C64BF228A74E9E91DE3BB4 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		20E10411456A4454B7685E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB45D0B5BB448F8E7F3F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF988A3CD08144839F58757C;
+			remoteInfo = ZERO_CHECK;
+		};
+		32A3385B09BE4D6B9F7EA5B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB45D0B5BB448F8E7F3F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC54FEEBAFA42408F13BC53;
+			remoteInfo = dlib;
+		};
+		561ECFD16DE0430C8E458952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB45D0B5BB448F8E7F3F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C48153A1E934E40B779E568;
+			remoteInfo = ALL_BUILD;
+		};
+		6EF01BEC34544283878BEAD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB45D0B5BB448F8E7F3F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF988A3CD08144839F58757C;
+			remoteInfo = ZERO_CHECK;
+		};
+		76F2C77357BE40A5BC372364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB45D0B5BB448F8E7F3F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C48153A1E934E40B779E568;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031820BEE88F4A79930C129E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jmemmgr.c; path = external/libjpeg/jmemmgr.c; sourceTree = SOURCE_ROOT; };
+		03413C47DF6E49BFB9D05F46 /* dlib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libdlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		086646CEEC0E492C8C0B8844 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdinput.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdinput.c; path = external/libjpeg/jdinput.c; sourceTree = SOURCE_ROOT; };
+		0E12463D5C234AAAB7572322 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/multithreaded_object_extension.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = multithreaded_object_extension.cpp; path = threads/multithreaded_object_extension.cpp; sourceTree = SOURCE_ROOT; };
+		10DEEFFBCD884A2086E1E40B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = misc_api_kernel_1.cpp; path = misc_api/misc_api_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		18315479359242EBB0CE1644 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/fonts.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fonts.cpp; path = gui_widgets/fonts.cpp; sourceTree = SOURCE_ROOT; };
+		1892B82D47DA4DB3ABDF8F18 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/tokenizer/tokenizer_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tokenizer_kernel_1.cpp; path = tokenizer/tokenizer_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		193865F8BEC04E1B8CDB89D2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = entropy_decoder_kernel_2.cpp; path = entropy_decoder/entropy_decoder_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		19ECB0B157734729A2743ADE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bsp/bsp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bsp.cpp; path = bsp/bsp.cpp; sourceTree = SOURCE_ROOT; };
+		1BA51ADB7621425E9BECE9D1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/global_optimization/global_function_search.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = global_function_search.cpp; path = global_optimization/global_function_search.cpp; sourceTree = SOURCE_ROOT; };
+		1C1BE670C6CF491BB9A0D60E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_http.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = server_http.cpp; path = server/server_http.cpp; sourceTree = SOURCE_ROOT; };
+		1DF203F0A5E84A0A8A6CD3DB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bigint_kernel_1.cpp; path = bigint/bigint_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		21C3AC12BD374915A2A94F85 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/jpeg_loader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jpeg_loader.cpp; path = image_loader/jpeg_loader.cpp; sourceTree = SOURCE_ROOT; };
+		21F058703E584C789836AF46 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sockets_kernel_2.cpp; path = sockets/sockets_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		231B1A12B5454AE1A931BC9A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threaded_object_extension.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = threaded_object_extension.cpp; path = threads/threaded_object_extension.cpp; sourceTree = SOURCE_ROOT; };
+		27175C372EA64B49B95278C4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_jpeg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = save_jpeg.cpp; path = image_saver/save_jpeg.cpp; sourceTree = SOURCE_ROOT; };
+		28974E44D67C464890222838 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = widgets.cpp; path = gui_widgets/widgets.cpp; sourceTree = SOURCE_ROOT; };
+		2D0AB556C42746D98CA46287 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/cifar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cifar.cpp; path = data_io/cifar.cpp; sourceTree = SOURCE_ROOT; };
+		2F89D557FC93434B9D7AE616 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_kernel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = server_kernel.cpp; path = server/server_kernel.cpp; sourceTree = SOURCE_ROOT; };
+		34062E874A2F4117843B4048 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jmemnobs.c; path = external/libjpeg/jmemnobs.c; sourceTree = SOURCE_ROOT; };
+		346FB72D1A2643209E85FC58 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jchuff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jchuff.c; path = external/libjpeg/jchuff.c; sourceTree = SOURCE_ROOT; };
+		37F3850E205B4CFA89187A86 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/linker/linker_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = linker_kernel_1.cpp; path = linker/linker_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		385794AF25B84348849E780B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcmainct.c; path = external/libjpeg/jcmainct.c; sourceTree = SOURCE_ROOT; };
+		38617A8073D146B4A6CAEFAD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/md5/md5_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = md5_kernel_1.cpp; path = md5/md5_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		3F84A21C0BB24B08BB82E37C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant2.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jquant2.c; path = external/libjpeg/jquant2.c; sourceTree = SOURCE_ROOT; };
+		41CCD6B163F54C75A34560D3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_extensions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sockets_extensions.cpp; path = sockets/sockets_extensions.cpp; sourceTree = SOURCE_ROOT; };
+		443078BCDFEE4DF78A7BE6B1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jccoefct.c; path = external/libjpeg/jccoefct.c; sourceTree = SOURCE_ROOT; };
+		44DF2C0779AC430687F2D37F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdatasrc.c; path = external/libjpeg/jdatasrc.c; sourceTree = SOURCE_ROOT; };
+		45068606C82D49218C205D88 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/base64/base64_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64_kernel_1.cpp; path = base64/base64_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		451ED72FD9184291B8A6E646 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdcoefct.c; path = external/libjpeg/jdcoefct.c; sourceTree = SOURCE_ROOT; };
+		452EE00C509A427EA2200D1A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bit_stream/bit_stream_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bit_stream_kernel_1.cpp; path = bit_stream/bit_stream_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		4DB32EB6119249DFA957DA6F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/filtering/kalman_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kalman_filter.cpp; path = filtering/kalman_filter.cpp; sourceTree = SOURCE_ROOT; };
+		51C3DD03263649CBB7626C04 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = misc_api_kernel_2.cpp; path = misc_api/misc_api_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		53A51A4F5BB94FBDBDE04479 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcarith.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcarith.c; path = external/libjpeg/jcarith.c; sourceTree = SOURCE_ROOT; };
+		57066F6427D04D02A501950B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5833E0CC204B45439E1E15C5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/test_for_odr_violations.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_for_odr_violations.cpp; path = test_for_odr_violations.cpp; sourceTree = SOURCE_ROOT; };
+		583F0AAD01134FE4AD85A063 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jquant1.c; path = external/libjpeg/jquant1.c; sourceTree = SOURCE_ROOT; };
+		5B63838D91A643F8A467C6CC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/cpu_dlib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cpu_dlib.cpp; path = cuda/cpu_dlib.cpp; sourceTree = SOURCE_ROOT; };
+		5F8B5B4DEAAA4122B689EB5B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dir_nav_kernel_1.cpp; path = dir_nav/dir_nav_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		63B58B2DC41C4871AF90C39A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdsample.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdsample.c; path = external/libjpeg/jdsample.c; sourceTree = SOURCE_ROOT; };
+		6412014A5C714DAB974A9D61 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gui_core_kernel_2.cpp; path = gui_core/gui_core_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		661C4EE5A7B84F66A8E0907A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_png.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = save_png.cpp; path = image_saver/save_png.cpp; sourceTree = SOURCE_ROOT; };
+		682F15CB212D48D5B521E3F4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_iostream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = server_iostream.cpp; path = server/server_iostream.cpp; sourceTree = SOURCE_ROOT; };
+		6BAAD7C5B8FB4045AB2BEC64 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcparam.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcparam.c; path = external/libjpeg/jcparam.c; sourceTree = SOURCE_ROOT; };
+		6C7A78D567964024B0C83BD1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcsample.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcsample.c; path = external/libjpeg/jcsample.c; sourceTree = SOURCE_ROOT; };
+		709D7705853A419CB3E32F2E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/unicode/unicode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = unicode.cpp; path = unicode/unicode.cpp; sourceTree = SOURCE_ROOT; };
+		736E8CE5E39746C3AF8EC3AB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/png_loader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = png_loader.cpp; path = image_loader/png_loader.cpp; sourceTree = SOURCE_ROOT; };
+		73AC47447D4748D290C46FFF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcinit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcinit.c; path = external/libjpeg/jcinit.c; sourceTree = SOURCE_ROOT; };
+		73D1AF761911423588AE4B38 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_extensions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dir_nav_extensions.cpp; path = dir_nav/dir_nav_extensions.cpp; sourceTree = SOURCE_ROOT; };
+		752C2AB8F5C8488496A29D18 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sockstreambuf.cpp; path = sockstreambuf/sockstreambuf.cpp; sourceTree = SOURCE_ROOT; };
+		7575D6B6D73B484FAA0B5440 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdapistd.c; path = external/libjpeg/jdapistd.c; sourceTree = SOURCE_ROOT; };
+		75D92B02016D4AD0ADF602F9 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcmarker.c; path = external/libjpeg/jcmarker.c; sourceTree = SOURCE_ROOT; };
+		7B880592A2FF4C6F9E37A6FD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/timer/timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer.cpp; path = timer/timer.cpp; sourceTree = SOURCE_ROOT; };
+		7D9863F5EAE2490E804ECF36 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gui_core_kernel_1.cpp; path = gui_core/gui_core_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		7EB2F2C7EC804FF6981C2538 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logger_kernel_1.cpp; path = logger/logger_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		7F376E4A17AB4C90A0CF401B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcomapi.c; path = external/libjpeg/jcomapi.c; sourceTree = SOURCE_ROOT; };
+		84ED3FE824184A6D981BC79A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jerror.c; path = external/libjpeg/jerror.c; sourceTree = SOURCE_ROOT; };
+		89D6B99826F242908B89B3EF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcdctmgr.c; path = external/libjpeg/jcdctmgr.c; sourceTree = SOURCE_ROOT; };
+		8CB1BF295D704E398BCE346A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdcolor.c; path = external/libjpeg/jdcolor.c; sourceTree = SOURCE_ROOT; };
+		91345BF4BEBF44BC955AAC85 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/tensor_tools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tensor_tools.cpp; path = cuda/tensor_tools.cpp; sourceTree = SOURCE_ROOT; };
+		92902C0995D546B39E3C431D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jfdctint.c; path = external/libjpeg/jfdctint.c; sourceTree = SOURCE_ROOT; };
+		98C58F03E87249B59F779DB8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdapimin.c; path = external/libjpeg/jdapimin.c; sourceTree = SOURCE_ROOT; };
+		9B092D8779534BEE8250CAE5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = threads_kernel_2.cpp; path = threads/threads_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		9F1D68969617423F8AA6044D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/canvas_drawing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = canvas_drawing.cpp; path = gui_widgets/canvas_drawing.cpp; sourceTree = SOURCE_ROOT; };
+		A00D6A45E2E54416800007CB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A274265DA90E444BB706B618 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/async.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = async.cpp; path = threads/async.cpp; sourceTree = SOURCE_ROOT; };
+		A46BA0A5E05E48F1AC7B646D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdhuff.c; path = external/libjpeg/jdhuff.c; sourceTree = SOURCE_ROOT; };
+		A4C5FD6AF29A4AE081284F1E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/extra_logger_headers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = extra_logger_headers.cpp; path = logger/extra_logger_headers.cpp; sourceTree = SOURCE_ROOT; };
+		AA6E5DE3C8EA4E0E9E320B05 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jutils.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jutils.c; path = external/libjpeg/jutils.c; sourceTree = SOURCE_ROOT; };
+		AE24DE98C70B4EA29C1B74BB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmaster.c; path = external/libjpeg/jdmaster.c; sourceTree = SOURCE_ROOT; };
+		B08431D529B1409E9B4E9BF3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmainct.c; path = external/libjpeg/jdmainct.c; sourceTree = SOURCE_ROOT; };
+		B2ACC9D1591148B78B3855B0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = threads_kernel_1.cpp; path = threads/threads_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		B912121125E3456DA5C8475E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dir_nav_kernel_2.cpp; path = dir_nav/dir_nav_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		B940404C86F244BDA1613CA7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdatadst.c; path = external/libjpeg/jdatadst.c; sourceTree = SOURCE_ROOT; };
+		BDFE737CFD6A4020B6D25BEE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/style.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = style.cpp; path = gui_widgets/style.cpp; sourceTree = SOURCE_ROOT; };
+		BFCCBC888A2C4D4DB8062AE8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcapimin.c; path = external/libjpeg/jcapimin.c; sourceTree = SOURCE_ROOT; };
+		C0542CB7C6B54AE7A62F14A1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/stack_trace.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stack_trace.cpp; path = stack_trace.cpp; sourceTree = SOURCE_ROOT; };
+		C137792D610D472CBC093460 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sockstreambuf_unbuffered.cpp; path = sockstreambuf/sockstreambuf_unbuffered.cpp; sourceTree = SOURCE_ROOT; };
+		C19A1FFF5DD547B7B38B28A4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/base_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base_widgets.cpp; path = gui_widgets/base_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		C1B0F13CDAB0469EA5F934FC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = entropy_encoder_kernel_2.cpp; path = entropy_encoder/entropy_encoder_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		C3A31F88C6F44851BF66A063 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdarith.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdarith.c; path = external/libjpeg/jdarith.c; sourceTree = SOURCE_ROOT; };
+		C62CCF87A98A4E398500C1A2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jddctmgr.c; path = external/libjpeg/jddctmgr.c; sourceTree = SOURCE_ROOT; };
+		CA01D21F8B7E45ED94795917 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = entropy_decoder_kernel_1.cpp; path = entropy_decoder/entropy_decoder_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		CD997FD4F9E64190906540DA /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmerge.c; path = external/libjpeg/jdmerge.c; sourceTree = SOURCE_ROOT; };
+		CF3DD64558A049BFBC490F6C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctflt.c; path = external/libjpeg/jidctflt.c; sourceTree = SOURCE_ROOT; };
+		D0ADEE9A6B4542ECBF155F1F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/svm/auto.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = auto.cpp; path = svm/auto.cpp; sourceTree = SOURCE_ROOT; };
+		D163949C93D54E5EA69AE961 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcmaster.c; path = external/libjpeg/jcmaster.c; sourceTree = SOURCE_ROOT; };
+		D43A59ECF40F4D1180EE2FCB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/mnist.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mnist.cpp; path = data_io/mnist.cpp; sourceTree = SOURCE_ROOT; };
+		D43FC6A709A6424EBE093F70 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bigint_kernel_2.cpp; path = bigint/bigint_kernel_2.cpp; sourceTree = SOURCE_ROOT; };
+		D8ABE9641479428081899C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdpostct.c; path = external/libjpeg/jdpostct.c; sourceTree = SOURCE_ROOT; };
+		D98355C523BD4D028D58B88E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sockets_kernel_1.cpp; path = sockets/sockets_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		E414BDE45C164D7F94801737 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/drawable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = drawable.cpp; path = gui_widgets/drawable.cpp; sourceTree = SOURCE_ROOT; };
+		E6762FAFE9E54EA6B109600A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_shared.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = threads_kernel_shared.cpp; path = threads/threads_kernel_shared.cpp; sourceTree = SOURCE_ROOT; };
+		EAF64DF1C8794F72A32D2471 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctint.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctint.c; path = external/libjpeg/jidctint.c; sourceTree = SOURCE_ROOT; };
+		ED5A8FDA2DCD4CFBBF947A69 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jfdctflt.c; path = external/libjpeg/jfdctflt.c; sourceTree = SOURCE_ROOT; };
+		ED6B3B1A14134064B4928D50 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccolor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jccolor.c; path = external/libjpeg/jccolor.c; sourceTree = SOURCE_ROOT; };
+		EE75052394B14718B73EFB08 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmarker.c; path = external/libjpeg/jdmarker.c; sourceTree = SOURCE_ROOT; };
+		F0C34C5A86BC4D6EBDEC37F7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcapistd.c; path = external/libjpeg/jcapistd.c; sourceTree = SOURCE_ROOT; };
+		F10227912DB749328C4869FB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jfdctfst.c; path = external/libjpeg/jfdctfst.c; sourceTree = SOURCE_ROOT; };
+		F19A025D0F314D2D8CD3ED6D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcprepct.c; path = external/libjpeg/jcprepct.c; sourceTree = SOURCE_ROOT; };
+		F2396A0A85EB4187BDD852B1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctfst.c; path = external/libjpeg/jidctfst.c; sourceTree = SOURCE_ROOT; };
+		F3911A082A6D475E83FEBE30 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = entropy_encoder_kernel_1.cpp; path = entropy_encoder/entropy_encoder_kernel_1.cpp; sourceTree = SOURCE_ROOT; };
+		F54B781630C148F1A92B5540 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/image_dataset_metadata.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_dataset_metadata.cpp; path = data_io/image_dataset_metadata.cpp; sourceTree = SOURCE_ROOT; };
+		F65472D7A5484EE3901FA382 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_config_file.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logger_config_file.cpp; path = logger/logger_config_file.cpp; sourceTree = SOURCE_ROOT; };
+		FA649676FC714B72A20041BB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jaricom.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jaricom.c; path = external/libjpeg/jaricom.c; sourceTree = SOURCE_ROOT; };
+		FFE05675731C424894A46B7B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/thread_pool_extension.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_pool_extension.cpp; path = threads/thread_pool_extension.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E396A0B78394A6D8832A253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CE5112CE446494B9539BF2E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DB54E7D2490A4A67BB898F3F /* CMake Rules */,
+				57066F6427D04D02A501950B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		43B7C9C4B9464F3F8B4DB335 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				45068606C82D49218C205D88 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/base64/base64_kernel_1.cpp */,
+				1DF203F0A5E84A0A8A6CD3DB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_1.cpp */,
+				D43FC6A709A6424EBE093F70 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_2.cpp */,
+				452EE00C509A427EA2200D1A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bit_stream/bit_stream_kernel_1.cpp */,
+				19ECB0B157734729A2743ADE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bsp/bsp.cpp */,
+				5B63838D91A643F8A467C6CC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/cpu_dlib.cpp */,
+				91345BF4BEBF44BC955AAC85 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/tensor_tools.cpp */,
+				2D0AB556C42746D98CA46287 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/cifar.cpp */,
+				F54B781630C148F1A92B5540 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/image_dataset_metadata.cpp */,
+				D43A59ECF40F4D1180EE2FCB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/mnist.cpp */,
+				73D1AF761911423588AE4B38 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_extensions.cpp */,
+				5F8B5B4DEAAA4122B689EB5B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_1.cpp */,
+				B912121125E3456DA5C8475E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_2.cpp */,
+				CA01D21F8B7E45ED94795917 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp */,
+				193865F8BEC04E1B8CDB89D2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp */,
+				F3911A082A6D475E83FEBE30 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp */,
+				C1B0F13CDAB0469EA5F934FC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp */,
+				FA649676FC714B72A20041BB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jaricom.c */,
+				BFCCBC888A2C4D4DB8062AE8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapimin.c */,
+				F0C34C5A86BC4D6EBDEC37F7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapistd.c */,
+				53A51A4F5BB94FBDBDE04479 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcarith.c */,
+				443078BCDFEE4DF78A7BE6B1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccoefct.c */,
+				ED6B3B1A14134064B4928D50 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccolor.c */,
+				89D6B99826F242908B89B3EF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcdctmgr.c */,
+				346FB72D1A2643209E85FC58 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jchuff.c */,
+				73AC47447D4748D290C46FFF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcinit.c */,
+				385794AF25B84348849E780B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmainct.c */,
+				75D92B02016D4AD0ADF602F9 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmarker.c */,
+				D163949C93D54E5EA69AE961 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmaster.c */,
+				7F376E4A17AB4C90A0CF401B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcomapi.c */,
+				6BAAD7C5B8FB4045AB2BEC64 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcparam.c */,
+				F19A025D0F314D2D8CD3ED6D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcprepct.c */,
+				6C7A78D567964024B0C83BD1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcsample.c */,
+				98C58F03E87249B59F779DB8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapimin.c */,
+				7575D6B6D73B484FAA0B5440 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapistd.c */,
+				C3A31F88C6F44851BF66A063 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdarith.c */,
+				B940404C86F244BDA1613CA7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatadst.c */,
+				44DF2C0779AC430687F2D37F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatasrc.c */,
+				451ED72FD9184291B8A6E646 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcoefct.c */,
+				8CB1BF295D704E398BCE346A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcolor.c */,
+				C62CCF87A98A4E398500C1A2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jddctmgr.c */,
+				A46BA0A5E05E48F1AC7B646D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdhuff.c */,
+				086646CEEC0E492C8C0B8844 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdinput.c */,
+				B08431D529B1409E9B4E9BF3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmainct.c */,
+				EE75052394B14718B73EFB08 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmarker.c */,
+				AE24DE98C70B4EA29C1B74BB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmaster.c */,
+				CD997FD4F9E64190906540DA /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmerge.c */,
+				D8ABE9641479428081899C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdpostct.c */,
+				63B58B2DC41C4871AF90C39A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdsample.c */,
+				84ED3FE824184A6D981BC79A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jerror.c */,
+				ED5A8FDA2DCD4CFBBF947A69 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctflt.c */,
+				F10227912DB749328C4869FB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctfst.c */,
+				92902C0995D546B39E3C431D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctint.c */,
+				CF3DD64558A049BFBC490F6C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctflt.c */,
+				F2396A0A85EB4187BDD852B1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctfst.c */,
+				EAF64DF1C8794F72A32D2471 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctint.c */,
+				031820BEE88F4A79930C129E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemmgr.c */,
+				34062E874A2F4117843B4048 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemnobs.c */,
+				583F0AAD01134FE4AD85A063 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant1.c */,
+				3F84A21C0BB24B08BB82E37C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant2.c */,
+				AA6E5DE3C8EA4E0E9E320B05 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jutils.c */,
+				4DB32EB6119249DFA957DA6F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/filtering/kalman_filter.cpp */,
+				1BA51ADB7621425E9BECE9D1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/global_optimization/global_function_search.cpp */,
+				7D9863F5EAE2490E804ECF36 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_1.cpp */,
+				6412014A5C714DAB974A9D61 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_2.cpp */,
+				C19A1FFF5DD547B7B38B28A4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/base_widgets.cpp */,
+				9F1D68969617423F8AA6044D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/canvas_drawing.cpp */,
+				E414BDE45C164D7F94801737 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/drawable.cpp */,
+				18315479359242EBB0CE1644 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/fonts.cpp */,
+				BDFE737CFD6A4020B6D25BEE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/style.cpp */,
+				28974E44D67C464890222838 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/widgets.cpp */,
+				21C3AC12BD374915A2A94F85 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/jpeg_loader.cpp */,
+				736E8CE5E39746C3AF8EC3AB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/png_loader.cpp */,
+				27175C372EA64B49B95278C4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_jpeg.cpp */,
+				661C4EE5A7B84F66A8E0907A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_png.cpp */,
+				37F3850E205B4CFA89187A86 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/linker/linker_kernel_1.cpp */,
+				A4C5FD6AF29A4AE081284F1E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/extra_logger_headers.cpp */,
+				F65472D7A5484EE3901FA382 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_config_file.cpp */,
+				7EB2F2C7EC804FF6981C2538 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_kernel_1.cpp */,
+				38617A8073D146B4A6CAEFAD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/md5/md5_kernel_1.cpp */,
+				10DEEFFBCD884A2086E1E40B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_1.cpp */,
+				51C3DD03263649CBB7626C04 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_2.cpp */,
+				1C1BE670C6CF491BB9A0D60E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_http.cpp */,
+				682F15CB212D48D5B521E3F4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_iostream.cpp */,
+				2F89D557FC93434B9D7AE616 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_kernel.cpp */,
+				41CCD6B163F54C75A34560D3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_extensions.cpp */,
+				D98355C523BD4D028D58B88E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_1.cpp */,
+				21F058703E584C789836AF46 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_2.cpp */,
+				752C2AB8F5C8488496A29D18 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf.cpp */,
+				C137792D610D472CBC093460 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp */,
+				C0542CB7C6B54AE7A62F14A1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/stack_trace.cpp */,
+				D0ADEE9A6B4542ECBF155F1F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/svm/auto.cpp */,
+				5833E0CC204B45439E1E15C5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/test_for_odr_violations.cpp */,
+				A274265DA90E444BB706B618 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/async.cpp */,
+				0E12463D5C234AAAB7572322 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/multithreaded_object_extension.cpp */,
+				FFE05675731C424894A46B7B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/thread_pool_extension.cpp */,
+				231B1A12B5454AE1A931BC9A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threaded_object_extension.cpp */,
+				B2ACC9D1591148B78B3855B0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_1.cpp */,
+				9B092D8779534BEE8250CAE5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_2.cpp */,
+				E6762FAFE9E54EA6B109600A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_shared.cpp */,
+				7B880592A2FF4C6F9E37A6FD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/timer/timer.cpp */,
+				1892B82D47DA4DB3ABDF8F18 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/tokenizer/tokenizer_kernel_1.cpp */,
+				709D7705853A419CB3E32F2E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/unicode/unicode.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		455BC006BFDD40FD9AEB010F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03413C47DF6E49BFB9D05F46 /* dlib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5762B165D10042B18691A496 = {
+			isa = PBXGroup;
+			children = (
+				83D95B54C49E4066B09F4489 /* dlib */,
+				2CE5112CE446494B9539BF2E /* ALL_BUILD */,
+				455BC006BFDD40FD9AEB010F /* Products */,
+				F1AB7748AAFF43F2B2630713 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83D95B54C49E4066B09F4489 /* dlib */ = {
+			isa = PBXGroup;
+			children = (
+				43B7C9C4B9464F3F8B4DB335 /* Source Files */,
+				A00D6A45E2E54416800007CB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/CMakeLists.txt */,
+			);
+			name = dlib;
+			sourceTree = "<group>";
+		};
+		DB54E7D2490A4A67BB898F3F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F1AB7748AAFF43F2B2630713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC54FEEBAFA42408F13BC53 /* dlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842F99ED60A84AAE8ADA57E9 /* Build configuration list for PBXNativeTarget "dlib" */;
+			buildPhases = (
+				2A9545FD12F04611A2F4FE01 /* Sources */,
+				8E396A0B78394A6D8832A253 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47A044AAA3E848B1B1F24F43 /* PBXTargetDependency */,
+			);
+			name = dlib;
+			productName = dlib;
+			productReference = 03413C47DF6E49BFB9D05F46 /* dlib */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EAB45D0B5BB448F8E7F3F5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1400;
+			};
+			buildConfigurationList = 776BDF17AEAD4BEEBAA6D192 /* Build configuration list for PBXProject "dlib" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				A59DEE6EA1EE4EC584BF7E5A /* Debug */,
+				B8BDA1460A804B25854CDAC4 /* Release */,
+				F7C64BF228A74E9E91DE3BB4 /* MinSizeRel */,
+				BFB4B5D6BE884FFA9403D16F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 5762B165D10042B18691A496;
+			projectDirPath = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib";
+			projectRoot = "";
+			targets = (
+				2C48153A1E934E40B779E568 /* ALL_BUILD */,
+				EF988A3CD08144839F58757C /* ZERO_CHECK */,
+				3BC54FEEBAFA42408F13BC53 /* dlib */,
+				295643282D494956845655D8 /* install */,
+				BA477325EACB48659CF60FAF /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6C09FD1832907A70B09E3E76 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C935515C8382E878F4170140 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A9545FD12F04611A2F4FE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4991D2F9E14E6DBD1AF73A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/base64/base64_kernel_1.cpp */,
+				96F571F416B043D19FE1DEF6 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_1.cpp */,
+				947718CA86A74162B3699185 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bigint/bigint_kernel_2.cpp */,
+				3F8E421D9D74406C8EE50294 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bit_stream/bit_stream_kernel_1.cpp */,
+				C23BCECFC1C54240BC3DF1AC /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/bsp/bsp.cpp */,
+				CB5E7FBAD7CB4C828A4D684B /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/cpu_dlib.cpp */,
+				D64AF8CA0FC54E91BC329512 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cuda/tensor_tools.cpp */,
+				1F58C45D93B04567A3EB038E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/cifar.cpp */,
+				49935E7C65A64E9799A428F3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/image_dataset_metadata.cpp */,
+				E8F5E40F22B94ABEA41E0FC7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/data_io/mnist.cpp */,
+				9E6096C7972F4380B10A751E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_extensions.cpp */,
+				F856E4FC8ED146DDBAD9D59E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_1.cpp */,
+				0BD489F78FED4308BD876529 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/dir_nav/dir_nav_kernel_2.cpp */,
+				4CC2E2C9F38E448E97676C02 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp */,
+				847DDCFA59024F55B82825C4 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp */,
+				C3EC3A7E1ABD450490D005FD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp */,
+				70BF78EE44E643ECAADCC99A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp */,
+				2DD7A89935154AE6AF82FD52 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jaricom.c */,
+				4D2D7A448F3E457F9F303C9A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapimin.c */,
+				136416DA3EA541B394F7CBB0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcapistd.c */,
+				35094402491447EC99D74005 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcarith.c */,
+				9402881E28DE48D7BF244C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccoefct.c */,
+				88CDC1C04D8B448F819F7F0F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jccolor.c */,
+				0890821665F34330AE084795 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcdctmgr.c */,
+				31CB1718B42B4623BEBFF5A8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jchuff.c */,
+				7440A59E484C40E989358CF5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcinit.c */,
+				0570EBD10A4B4BC183E129C8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmainct.c */,
+				8CD602209A95447581A4DC25 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmarker.c */,
+				CE1C37DEDD6247ED95AB0ECB /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcmaster.c */,
+				49107191791A4B7F9437C59F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcomapi.c */,
+				5696CDD8078F449788D34924 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcparam.c */,
+				A8682FF23AFD4B109A563C15 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcprepct.c */,
+				556107A9C7954052AD9D68C1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jcsample.c */,
+				2C8787D45DF5417A98F43C29 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapimin.c */,
+				2FC97AA17C834DB7B8B9E0A0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdapistd.c */,
+				D99D6CC1547D40D5B37F07E3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdarith.c */,
+				15080EB4DB4F44EDBE7E3E13 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatadst.c */,
+				AA89051E0F774326AA35F59E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdatasrc.c */,
+				370EB1FF8C0F403B8F455FF3 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcoefct.c */,
+				983B293B14A9476B9EC3006F /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdcolor.c */,
+				A78A8C3EFFB64DB88C6D296A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jddctmgr.c */,
+				8D833EC4C9EA4342B5F0B754 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdhuff.c */,
+				6087F226303649C9BB778E91 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdinput.c */,
+				BDC5D5DAAC944152843A6072 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmainct.c */,
+				9CA465169423470F8D3832BE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmarker.c */,
+				C5005A2C8C07410F9497A934 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmaster.c */,
+				F8B78EF3A34C42B1B5B9BD71 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdmerge.c */,
+				2AFC00A9DA1140F09A59728A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdpostct.c */,
+				9425F781DD804D229DBD037D /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jdsample.c */,
+				F16DC0DDFEFD4B1792825CB5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jerror.c */,
+				F775759D21804F848724E79C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctflt.c */,
+				9B4D5403C0FB4EA58F094632 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctfst.c */,
+				BBE1DBF46F6947B099E1182C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jfdctint.c */,
+				C7148D116C8D4A1DAA4CF322 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctflt.c */,
+				48824CD615FA4C7E9DEE1425 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctfst.c */,
+				DFE37061C74345F1AA5E9122 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jidctint.c */,
+				B404EE466B8840A48FA02980 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemmgr.c */,
+				F264AF3D2F2E41B1A360F616 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jmemnobs.c */,
+				4D794C2700EB42A59F193F64 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant1.c */,
+				CB947AEF5D7449DD93E5A0DF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jquant2.c */,
+				CDE1DDEEFBEC40C9849FCB52 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/external/libjpeg/jutils.c */,
+				68825AEE87094A0BA02BAB79 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/filtering/kalman_filter.cpp */,
+				57445E78BCEC4A1CB5C8CB31 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/global_optimization/global_function_search.cpp */,
+				163EE5234A7C45AF976B6ADE /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_1.cpp */,
+				B852D08F45C344DAB71A1A0A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_core/gui_core_kernel_2.cpp */,
+				0FF0AB112CD844D2A1381D43 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/base_widgets.cpp */,
+				451C76E88B874AACA4FF8B07 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/canvas_drawing.cpp */,
+				161BDE9BE3B441C9873CB687 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/drawable.cpp */,
+				5A50774E6F9341C8A5AE4A5A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/fonts.cpp */,
+				16E366C68D5646B8A9365801 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/style.cpp */,
+				B1428E657BFB424CA09D08EA /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/gui_widgets/widgets.cpp */,
+				E805518FAE4B4689B53ECBC7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/jpeg_loader.cpp */,
+				BCDA35EF7B5342038ECBE7A2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_loader/png_loader.cpp */,
+				63370B3B82F3447094D87628 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_jpeg.cpp */,
+				0632658999A74B3A94506631 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/image_saver/save_png.cpp */,
+				ABDF858A519D4FA9A504E1C0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/linker/linker_kernel_1.cpp */,
+				3469923BEFEE4590813746B5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/extra_logger_headers.cpp */,
+				2D8EDBAF1EBD4DB0A228BB49 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_config_file.cpp */,
+				CFF27480710845E188E6D203 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/logger/logger_kernel_1.cpp */,
+				A35BFF23DE90484A961E8CE7 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/md5/md5_kernel_1.cpp */,
+				F6675B8E8F3F431C834ACD1E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_1.cpp */,
+				E3A4E1697A5B42719203D49A /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/misc_api/misc_api_kernel_2.cpp */,
+				23D918693FA841A9ABF22F33 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_http.cpp */,
+				88C6FA3A7522497AB66FD0C1 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_iostream.cpp */,
+				1FE586688A374AD187564B43 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/server/server_kernel.cpp */,
+				5859A964222940DE87A7AB1C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_extensions.cpp */,
+				6D83FF0F4464494D8424D843 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_1.cpp */,
+				573297A3E4A04A188E7EDE78 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockets/sockets_kernel_2.cpp */,
+				60B9234EA5F54042ACEE91A0 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf.cpp */,
+				B9CBF8B6DC3D4A56A4053197 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp */,
+				AB4949E83F1648A1BEAF566C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/stack_trace.cpp */,
+				AE301FB843EE44E2A28E33D5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/svm/auto.cpp */,
+				4E316BE98AE74A61A3C40E54 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/test_for_odr_violations.cpp */,
+				09A34BDAFE544B6FBFD0B224 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/async.cpp */,
+				A3D7C3DDE4B24C4D9C29FDF2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/multithreaded_object_extension.cpp */,
+				DC3C981F75A44DECB2065619 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/thread_pool_extension.cpp */,
+				581EB6FECAC542D4832632C2 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threaded_object_extension.cpp */,
+				DB1F4B14E9984BB1BFB877CF /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_1.cpp */,
+				D8783793CB8349FB83BC5466 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_2.cpp */,
+				F79AAEA8166A4BE8A8AD919E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/threads/threads_kernel_shared.cpp */,
+				A403851CA5284E6A89696EF8 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/timer/timer.cpp */,
+				C39F42E2E53B46D3B33D12CD /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/tokenizer/tokenizer_kernel_1.cpp */,
+				6AB1E052A78D4489B729CF9C /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/unicode/unicode.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36DFC7AA5AA74A83B4A52424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC54FEEBAFA42408F13BC53 /* dlib */;
+			targetProxy = 32A3385B09BE4D6B9F7EA5B3 /* PBXContainerItemProxy */;
+		};
+		47A044AAA3E848B1B1F24F43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF988A3CD08144839F58757C /* ZERO_CHECK */;
+			targetProxy = 20E10411456A4454B7685E9C /* PBXContainerItemProxy */;
+		};
+		8A5B66222EBD4771ACB08D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF988A3CD08144839F58757C /* ZERO_CHECK */;
+			targetProxy = 6EF01BEC34544283878BEAD2 /* PBXContainerItemProxy */;
+		};
+		D528552DF6C840C7B251E766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C48153A1E934E40B779E568 /* ALL_BUILD */;
+			targetProxy = 561ECFD16DE0430C8E458952 /* PBXContainerItemProxy */;
+		};
+		FCA1FEA320454979819E9505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C48153A1E934E40B779E568 /* ALL_BUILD */;
+			targetProxy = 76F2C77357BE40A5BC372364 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B255D427201465F836306E5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		13DB32B1F1114107B9ECAA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		275CCFE41EAF41BFA52B68B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",DLIB_JPEG_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/X11R6/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dlib;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build/dlib.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		27DBFD0938E7447C88A716C9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		2C7A15F9357D421C91B4F00B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3ED6DED5714D4BA49C7A78D6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3F721962CAD54971903696DD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4666ACA3178A41A8BB005D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4A7BF54DD6674B789FDDA89F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",DLIB_JPEG_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/X11R6/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dlib;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build/dlib.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		59549EAD3C444DFE8244B849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		599F135F95034B0A84D39B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		615FE4FB2AD14232874F8880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6B96084DD9EB44F6BE8F3737 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		82EECB3641BA4F73992B0A2D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",DLIB_JPEG_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/X11R6/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dlib;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build/dlib.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8D85C2072A2A45ECBF8CE80F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		941790E44EBB47B78D3CF22F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A9620979EF6D40CE88DB171F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build";
+			};
+			name = MinSizeRel;
+		};
+		AA493176BD244CF89E370B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build";
+			};
+			name = Release;
+		};
+		AF22A9A02F4D48C1AD8D3ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",DLIB_JPEG_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/X11R6/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -DDLIB_DISABLE_ASSERTS -DDLIB_JPEG_SUPPORT -DDLIB_USE_BLAS -DDLIB_USE_LAPACK -DDLIB_PNG_SUPPORT -DLAPACK_FORCE_UNDERSCORE -DDLIB__CMAKE_GENERATED_A_CONFIG_H_FILE '-DDLIB_CHECK_FOR_VERSION_MISMATCH=DLIB_VERSION_MISMATCH_CHECK__EXPECTED_VERSION_19_24_0' '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dlib;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build/dlib.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B7E999240932497C8C630600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/build";
+			};
+			name = Debug;
+		};
+		C121059D47A644FFB348E513 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E38C53AE5FDE4E5299A62A3D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E4B056FE193F4CDC90455A45 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F2BCD8A0BC0F4DF3866E2DC8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CEE74272FE34171AAF7F426 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59549EAD3C444DFE8244B849 /* Debug */,
+				941790E44EBB47B78D3CF22F /* Release */,
+				C121059D47A644FFB348E513 /* MinSizeRel */,
+				0B255D427201465F836306E5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B43F994C8804DB2B3D56CBC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D85C2072A2A45ECBF8CE80F /* Debug */,
+				4666ACA3178A41A8BB005D3E /* Release */,
+				F2BCD8A0BC0F4DF3866E2DC8 /* MinSizeRel */,
+				E38C53AE5FDE4E5299A62A3D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		776BDF17AEAD4BEEBAA6D192 /* Build configuration list for PBXProject "dlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E999240932497C8C630600 /* Debug */,
+				AA493176BD244CF89E370B53 /* Release */,
+				A9620979EF6D40CE88DB171F /* MinSizeRel */,
+				27DBFD0938E7447C88A716C9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		842F99ED60A84AAE8ADA57E9 /* Build configuration list for PBXNativeTarget "dlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF22A9A02F4D48C1AD8D3ADF /* Debug */,
+				4A7BF54DD6674B789FDDA89F /* Release */,
+				82EECB3641BA4F73992B0A2D /* MinSizeRel */,
+				275CCFE41EAF41BFA52B68B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A50B16D5EB5C4C708962C684 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				615FE4FB2AD14232874F8880 /* Debug */,
+				599F135F95034B0A84D39B57 /* Release */,
+				3ED6DED5714D4BA49C7A78D6 /* MinSizeRel */,
+				3F721962CAD54971903696DD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB297667F01643DAA5BFA7C8 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C7A15F9357D421C91B4F00B /* Debug */,
+				13DB32B1F1114107B9ECAA4C /* Release */,
+				6B96084DD9EB44F6BE8F3737 /* MinSizeRel */,
+				E4B056FE193F4CDC90455A45 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EAB45D0B5BB448F8E7F3F5F /* Project object */;
+}

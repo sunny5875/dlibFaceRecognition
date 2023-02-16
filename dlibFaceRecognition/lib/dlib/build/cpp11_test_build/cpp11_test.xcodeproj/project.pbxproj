@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		381D668CC8B4466E86A7D57B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 299A84292B6B4AB9BC1C791C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				8DA132AB1D4208BD3EBBCD28 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		4EB35B11EC184C2CAFFCE9E6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 57C69F6221224D67AA8F6B7A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				51D38ACD8C867133D92EE623 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				9A27706D82C64A9189AE36CF /* PBXTargetDependency */,
+				82CE78D64B1C4C21B0A8D243 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		10781F9CA7004B9F88DFAD04 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/cpp11_test.cpp */ = {isa = PBXBuildFile; fileRef = BCD1C6AB9CA44C34BB167010 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/cpp11_test.cpp */; };
+		D79774B07B3F4DB4B4E7DC2E /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 36C122F25A5346A894EC7FD5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		54975DA03F0B4BC9BADA755C /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		5584D105CBBD4503A3B942DB /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		8FDD17E3A87C4CBF993B44DB /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		991DC297A74F4575BB01CB15 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		181E7C1AF6CF4199A4D4CDDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD3FE4DC1E549BA86BC1436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381D668CC8B4466E86A7D57B;
+			remoteInfo = ZERO_CHECK;
+		};
+		67D88B29CE044B04A0732836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD3FE4DC1E549BA86BC1436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381D668CC8B4466E86A7D57B;
+			remoteInfo = ZERO_CHECK;
+		};
+		92100C3E39CF4402A497BCF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD3FE4DC1E549BA86BC1436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD8A4D585E145DB93F2FAE3;
+			remoteInfo = cpp11_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1949297373464FDA8192D914 /* cpp11_test */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcpp11_test.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C122F25A5346A894EC7FD5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		58E00459BB8747D798363FB9 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BCD1C6AB9CA44C34BB167010 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/cpp11_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cpp11_test.cpp; path = cpp11_test.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8DA503A28384433B4786A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06D54C96C1E44880B9492BC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C81DDF91E1B400898BF4F58 = {
+			isa = PBXGroup;
+			children = (
+				6D2CBF3C7DB547CFBF69EB2A /* cpp11_test */,
+				5D38911EC0CB4BCC8FBF640B /* ALL_BUILD */,
+				A92D64BC3F824808A5CF5113 /* Products */,
+				06D54C96C1E44880B9492BC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46087150709D43EEB9DD2A7A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4EB839DD752C427BA22B8511 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD1C6AB9CA44C34BB167010 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/cpp11_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5D38911EC0CB4BCC8FBF640B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				46087150709D43EEB9DD2A7A /* CMake Rules */,
+				58E00459BB8747D798363FB9 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		6D2CBF3C7DB547CFBF69EB2A /* cpp11_test */ = {
+			isa = PBXGroup;
+			children = (
+				4EB839DD752C427BA22B8511 /* Source Files */,
+				36C122F25A5346A894EC7FD5 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/CMakeLists.txt */,
+			);
+			name = cpp11_test;
+			sourceTree = "<group>";
+		};
+		A92D64BC3F824808A5CF5113 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1949297373464FDA8192D914 /* cpp11_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BD8A4D585E145DB93F2FAE3 /* cpp11_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41985DE979AB474D86AEB216 /* Build configuration list for PBXNativeTarget "cpp11_test" */;
+			buildPhases = (
+				D8DF77D04CC54586A4AAB352 /* Sources */,
+				C8DA503A28384433B4786A41 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				738B1C5B15984638905C580C /* PBXTargetDependency */,
+			);
+			name = cpp11_test;
+			productName = cpp11_test;
+			productReference = 1949297373464FDA8192D914 /* cpp11_test */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD3FE4DC1E549BA86BC1436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1400;
+			};
+			buildConfigurationList = 6A1C64C554204E00974C97A9 /* Build configuration list for PBXProject "cpp11_test" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				8FDD17E3A87C4CBF993B44DB /* Debug */,
+				991DC297A74F4575BB01CB15 /* Release */,
+				54975DA03F0B4BC9BADA755C /* MinSizeRel */,
+				5584D105CBBD4503A3B942DB /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 3C81DDF91E1B400898BF4F58;
+			projectDirPath = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11";
+			projectRoot = "";
+			targets = (
+				4EB35B11EC184C2CAFFCE9E6 /* ALL_BUILD */,
+				381D668CC8B4466E86A7D57B /* ZERO_CHECK */,
+				7BD8A4D585E145DB93F2FAE3 /* cpp11_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		51D38ACD8C867133D92EE623 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		8DA132AB1D4208BD3EBBCD28 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build
+  make -f /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8DF77D04CC54586A4AAB352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10781F9CA7004B9F88DFAD04 /* /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/cmake_utils/test_for_cpp11/cpp11_test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		738B1C5B15984638905C580C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381D668CC8B4466E86A7D57B /* ZERO_CHECK */;
+			targetProxy = 181E7C1AF6CF4199A4D4CDDC /* PBXContainerItemProxy */;
+		};
+		82CE78D64B1C4C21B0A8D243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD8A4D585E145DB93F2FAE3 /* cpp11_test */;
+			targetProxy = 92100C3E39CF4402A497BCF9 /* PBXContainerItemProxy */;
+		};
+		9A27706D82C64A9189AE36CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381D668CC8B4466E86A7D57B /* ZERO_CHECK */;
+			targetProxy = 67D88B29CE044B04A0732836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E2B6D5BEAE74F9198A078D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "     -std=c++11";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpp11_test;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build/cpp11_test.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		27128F0656324FA0B58C248D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3320C2BE9103414D9FAED1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3AC6F60EED244605B097BEEF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -std=c++11";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpp11_test;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build/cpp11_test.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6550A49336924DA58B00B688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++11";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpp11_test;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build/cpp11_test.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		66E86173F4454B3BB10ADA47 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7DD34E2A3331405E9537CF4A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		950C8494DC5642429A3DE475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CODE_SIGNING_ALLOWED = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build";
+			};
+			name = Release;
+		};
+		9C002D05181F47AE80CC3391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CODE_SIGNING_ALLOWED = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build";
+			};
+			name = Debug;
+		};
+		9C2834BF547A4FD29FFE3CD5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++11";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpp11_test;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build/cpp11_test.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9C5A66281F0E4B9BB530BDC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BA6B5A5E2E524019ADD23E42 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BF9653E944B94E6B8DA923D8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CODE_SIGNING_ALLOWED = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build";
+			};
+			name = MinSizeRel;
+		};
+		C5A9CF0FF44D46588E2B7D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D42A8C57085B49CDBE74986E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CODE_SIGNING_ALLOWED = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/cpp11_test_build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		D715B0BC953C4807B431DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		299A84292B6B4AB9BC1C791C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A9CF0FF44D46588E2B7D0C /* Debug */,
+				9C5A66281F0E4B9BB530BDC6 /* Release */,
+				66E86173F4454B3BB10ADA47 /* MinSizeRel */,
+				27128F0656324FA0B58C248D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		41985DE979AB474D86AEB216 /* Build configuration list for PBXNativeTarget "cpp11_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2B6D5BEAE74F9198A078D2 /* Debug */,
+				6550A49336924DA58B00B688 /* Release */,
+				9C2834BF547A4FD29FFE3CD5 /* MinSizeRel */,
+				3AC6F60EED244605B097BEEF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57C69F6221224D67AA8F6B7A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3320C2BE9103414D9FAED1DA /* Debug */,
+				D715B0BC953C4807B431DFBF /* Release */,
+				7DD34E2A3331405E9537CF4A /* MinSizeRel */,
+				BA6B5A5E2E524019ADD23E42 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6A1C64C554204E00974C97A9 /* Build configuration list for PBXProject "cpp11_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C002D05181F47AE80CC3391 /* Debug */,
+				950C8494DC5642429A3DE475 /* Release */,
+				BF9653E944B94E6B8DA923D8 /* MinSizeRel */,
+				D42A8C57085B49CDBE74986E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCD3FE4DC1E549BA86BC1436 /* Project object */;
+}

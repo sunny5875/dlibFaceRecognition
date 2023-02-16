@@ -1,0 +1,55 @@
+Determining if the function cblas_ddot exists failed with the following output:
+Change Dir: /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_00fa9 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_00fa9 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Computing target dependency graph and provisioning inputs
+
+Create build description
+Build description signature: 62e98311f7f5676278bb57626b317b2c
+Build description path: /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/XCBuildData/62e98311f7f5676278bb57626b317b2c-desc.xcbuild
+
+note: Building targets in dependency order
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build
+
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug
+
+CreateBuildDirectory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/EagerLinkingTBDs
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/EagerLinkingTBDs
+
+WriteAuxiliaryFile /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/cmTC_00fa9.LinkFileList (in target 'cmTC_00fa9' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE
+    write-file /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/cmTC_00fa9.LinkFileList
+
+CompileC /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/CheckFunctionExists.o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_00fa9' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-macos12.3 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug/include -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/DerivedSources-normal/x86_64 -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/DerivedSources/x86_64 -I/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/DerivedSources -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug -DCHECK_FUNCTION_EXISTS\=cblas_ddot -MMD -MT dependencies -MF /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/CheckFunctionExists.dia -c /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/CheckFunctionExists.c -o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug/cmTC_00fa9 normal (in target 'cmTC_00fa9' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-macos12.3 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/EagerLinkingTBDs -L/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/EagerLinkingTBDs -F/Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug -filelist /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/cmTC_00fa9.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/cmTC_00fa9_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/build/cmTC_00fa9.build/Debug/Objects-normal/x86_64/cmTC_00fa9_dependency_info.dat -o /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug/cmTC_00fa9
+Undefined symbols for architecture x86_64:
+  "_cblas_ddot", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld /Users/hyunsubin/faceRecognition/dlib-19.24/dlib/build/CMakeFiles/CMakeScratch/TryCompile-daUoLE/Debug/cmTC_00fa9 normal (in target 'cmTC_00fa9' from project 'CMAKE_TRY_COMPILE')
+(1 failure)
+
+
+
