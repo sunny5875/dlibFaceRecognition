@@ -87,8 +87,6 @@ void test(char* url){
             cout << "No faces found in image!" << endl;
             return;
         }
-
-
         std::vector<matrix<float,0,1>> face_descriptors = net(faces);
         std::vector<sample_pair> edges;
         for (size_t i = 0; i < face_descriptors.size(); ++i)
