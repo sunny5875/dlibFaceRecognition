@@ -2,28 +2,29 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EKY-yp-wUx">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Record Video View Controller-->
+        <!--얼굴 인식 비디오 촬영-->
         <scene sceneID="mRq-6Y-SDx">
             <objects>
-                <viewController id="IuQ-zL-dwD" customClass="RecordVideoViewController" customModule="faceRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IuQ-zL-dwD" customClass="RecordVideoViewController" customModule="dlibFaceRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLf-7o-d83">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-gw-Hkl" customClass="VideoView" customModule="faceRecognition" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-gw-Hkl" customClass="VideoView" customModule="dlibFaceRecognition" customModuleProvider="target">
                                 <rect key="frame" x="45" y="241" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="0kg-Bz-OtR"/>
                                     <constraint firstAttribute="height" constant="300" id="KAU-rY-Kub"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-Re-qsn" customClass="CustomButton" customModule="faceRecognition" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-Re-qsn" customClass="CustomButton" customModule="dlibFaceRecognition" customModuleProvider="target">
                                 <rect key="frame" x="45" y="641" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -56,7 +57,7 @@
                             <constraint firstItem="Uvk-2k-FNl" firstAttribute="centerX" secondItem="uLf-7o-d83" secondAttribute="centerX" id="q5L-wn-V3U"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vuH-3j-Mno"/>
+                    <navigationItem key="navigationItem" title="얼굴 인식 비디오 촬영" id="vuH-3j-Mno"/>
                     <connections>
                         <outlet property="desLabel" destination="Uvk-2k-FNl" id="mG2-mt-p8R"/>
                         <outlet property="startButton" destination="VhJ-Re-qsn" id="n0A-MF-jYa"/>
@@ -68,15 +69,15 @@
             </objects>
             <point key="canvasLocation" x="3789.2307692307691" y="1522.7488151658767"/>
         </scene>
-        <!--Add Name View Controller-->
+        <!--얼굴 인식 결과-->
         <scene sceneID="K1c-mv-CoQ">
             <objects>
-                <viewController id="U69-Bh-hSr" customClass="AddNameViewController" customModule="faceRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U69-Bh-hSr" customClass="AddNameViewController" customModule="dlibFaceRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFX-xe-9OT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw1-a3-7EN" customClass="CustomButton" customModule="faceRecognition" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw1-a3-7EN" customClass="CustomButton" customModule="dlibFaceRecognition" customModuleProvider="target">
                                 <rect key="frame" x="45" y="680.33333333333337" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -131,7 +132,7 @@
                             <constraint firstItem="tw1-a3-7EN" firstAttribute="top" secondItem="Qf9-5L-JTH" secondAttribute="bottom" constant="50" id="wnm-cA-voa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="g8z-o8-L0v"/>
+                    <navigationItem key="navigationItem" title="얼굴 인식 결과" id="g8z-o8-L0v"/>
                     <connections>
                         <outlet property="faceImageView" destination="4TW-dZ-XiS" id="2Tg-xb-EI7"/>
                         <outlet property="idTextField" destination="PTi-ah-Kw8" id="QjQ-wJ-bZ0"/>
@@ -146,15 +147,15 @@
         <!--Recognizing...-->
         <scene sceneID="P8o-VB-EZT">
             <objects>
-                <viewController id="K5Q-xV-4tk" customClass="FrameViewController" customModule="faceRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K5Q-xV-4tk" customClass="FrameViewController" customModule="dlibFaceRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PS7-t3-KJY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIl-DZ-0KH" customClass="PreviewView" customModule="faceRecognition" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIl-DZ-0KH" customClass="PreviewView" customModule="dlibFaceRecognition" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGv-tD-57D" customClass="CustomButton" customModule="faceRecognition" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGv-tD-57D" customClass="CustomButton" customModule="dlibFaceRecognition" customModuleProvider="target">
                                         <rect key="frame" x="30" y="724" width="340" height="50"/>
                                         <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -211,7 +212,7 @@
         <!--Predict Image-->
         <scene sceneID="qeo-TB-FxH">
             <objects>
-                <viewController id="rwr-2b-CcT" customClass="PredictImageViewController" customModule="faceRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rwr-2b-CcT" customClass="PredictImageViewController" customModule="dlibFaceRecognition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grl-ih-3c3">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,7 +249,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-0T-Old" customClass="CustomButton" customModule="faceRecognition" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-0T-Old" customClass="CustomButton" customModule="dlibFaceRecognition" customModuleProvider="target">
                                 <rect key="frame" x="30" y="607" width="330" height="50"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>

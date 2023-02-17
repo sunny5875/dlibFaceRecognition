@@ -23,6 +23,39 @@
 #import "test.hpp"
 
 
+using namespace dlib;
+using namespace std;
+
+template <template <int,template<typename>class,int,typename> class block, int N, template<typename>class BN, typename SUBNET>
+using residual = add_prev1<block<N,BN,1,tag1<SUBNET>>>;
+
+template <template <int,template<typename>class,int,typename> class block, int N, template<typename>class BN, typename SUBNET>
+using residual_down = add_prev2<avg_pool<2,2,2,2,skip1<tag2<block<N,BN,2,tag1<SUBNET>>>>>>;
+
+template <int N, template <typename> class BN, int stride, typename SUBNET>
+using block  = BN<con<N,3,3,1,1,relu<BN<con<N,3,3,stride,stride,SUBNET>>>>>;
+
+template <int N, typename SUBNET> using ares      = relu<residual<block,N,affine,SUBNET>>;
+template <int N, typename SUBNET> using ares_down = relu<residual_down<block,N,affine,SUBNET>>;
+
+template <typename SUBNET> using alevel0 = ares_down<256,SUBNET>;
+template <typename SUBNET> using alevel1 = ares<256,ares<256,ares_down<256,SUBNET>>>;
+template <typename SUBNET> using alevel2 = ares<128,ares<128,ares_down<128,SUBNET>>>;
+template <typename SUBNET> using alevel3 = ares<64,ares<64,ares<64,ares_down<64,SUBNET>>>>;
+template <typename SUBNET> using alevel4 = ares<32,ares<32,ares<32,SUBNET>>>;
+
+using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
+                            alevel0<
+                            alevel1<
+                            alevel2<
+                            alevel3<
+                            alevel4<
+                            max_pool<3,3,2,2,relu<affine<con<32,7,7,2,2,
+                            input_rgb_image_sized<150>
+                            >>>>>>>>>>>>;
+
+
+
 @interface DlibWrapper ()
 
 @property (assign) BOOL prepared;
@@ -115,10 +148,6 @@
         }
     }
 
-   
-    
-    // MARK: - 여기서부터 feature extract
-//    NSLog(@"=== start feature extract ===");
 //    dlib::array2d<dlib::rgb_pixel> img2;
 //
 //    CVImageBufferRef imageBuffer2 = CMSampleBufferGetImageBuffer(sampleBuffer);
@@ -150,9 +179,6 @@
 //    dlib::array2d<dlib::matrix<float,31,1>> hog;
 //    extract_fhog_features(img2, hog);
 //    NSLog(@"hog image has %ld rows and %ld columns", hog.nr(), hog.nc());
-//
-//
-//    NSLog(@"=== end extract ===");
 
     
     
@@ -193,10 +219,154 @@
     return myConvertedRects;
 }
 
-- (void)executeFaceRecognize:(char *)url {
-    NSLog(@"=== start extract ===");
-    test(url);
-    NSLog(@"=== end extract ===");
+- (NSMutableArray*)executeFaceRecognize {
+//    NSMutableString* arrayString = @"";
+    NSMutableArray *arrayString=[[NSMutableArray alloc]init];
+    
+    try
+    {
+        frontal_face_detector detector = get_frontal_face_detector();
+        shape_predictor sp;
+        anet_type net;
+        matrix<rgb_pixel> img;
+        
+        // MARK: -load shape_predictor_5_face_landmarks.dat
+        NSURL *datUrl = [[NSBundle mainBundle] URLForResource:@"shape_predictor_5_face_landmarks" withExtension:@".dat"];
+        NSLog(@"shape 주소: %@", datUrl.path);
+        if (datUrl.path)    {
+            char const *pPath = [datUrl.path cStringUsingEncoding:NSASCIIStringEncoding];
+            if (pPath) {
+                deserialize(pPath) >> sp;
+            }
+        }
+        
+        // MARK: -load dlib_face_recognition_resnet_model_v1.dat
+        NSURL *datUrl2 = [[NSBundle mainBundle] URLForResource:@"dlib_face_recognition_resnet_model_v1" withExtension:@".dat"];
+        NSLog(@"dlib 주소: %@", datUrl.path);
+        
+        if (datUrl2.path)    {
+            char const *pPath = [datUrl2.path cStringUsingEncoding:NSASCIIStringEncoding];
+            if (pPath) {
+                deserialize(pPath) >> net;
+            }
+        }
+        
+        // MARK: -load image
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,  NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:@"face.jpeg"];
+        
+        NSLog(@"image 주소: %@", savedImagePath);
+        
+        if (savedImagePath)    {
+            char const *pPath = [savedImagePath cStringUsingEncoding:NSASCIIStringEncoding];
+            if (pPath) {
+                load_image(img, pPath);
+            }
+        }
+      
+        std::vector<matrix<rgb_pixel>> faces;
+        for (auto face : detector(img))
+        {
+            auto shape = sp(img, face);
+            matrix<rgb_pixel> face_chip;
+            extract_image_chip(img, get_face_chip_details(shape,150,0.25), face_chip);
+            faces.push_back(move(face_chip));
+        }
+
+        if (faces.size() == 0)
+        {
+            cout << "No faces found in image!" << endl;
+            return arrayString;
+        }
+
+        std::vector<matrix<float,0,1>> face_descriptors = net(faces);
+//        std::vector<sample_pair> edges;
+//        for (size_t i = 0; i < face_descriptors.size(); ++i)
+//        {
+//            for (size_t j = i; j < face_descriptors.size(); ++j)
+//            {
+//                if (length(face_descriptors[i]-face_descriptors[j]) < 0.6)
+//                    edges.push_back(sample_pair(i,j));
+//            }
+//        }
+//        std::vector<unsigned long> labels;
+//        const auto num_clusters = chinese_whispers(edges, labels);
+        
+        matrix_op<op_trans<dlib::matrix<float, 0, 1>>> result = trans(face_descriptors[0]);
+
+//        cout << "number of people found in the image: "<< num_clusters << endl;
+        cout << "face descriptor for one face: " << result << endl;
+//        matrix<float,0,1> face_descriptor = mean(mat(net(jitter));
+//        cout << "jittered face descriptor for one face: " << trans(face_descriptor) << endl;
+        
+        for(auto it = result.begin(); it != result.end(); ++it) {
+            NSString* str = [NSString stringWithFormat:@"%.7f", *it];
+            [arrayString addObject:str];
+        }
+        return arrayString;
+
+    }
+    catch (std::exception& e)
+    {
+        cout << e.what() << endl;
+    }
+    return arrayString;
 }
+
+
+//
+//std::vector<matrix<rgb_pixel>> jitter_image(
+//    const matrix<rgb_pixel>& img
+//);
+//
+//
+//std::vector<matrix<rgb_pixel>> jitter_image(const matrix<rgb_pixel>& img) {
+//    thread_local dlib::rand rnd;
+//
+//    std::vector<matrix<rgb_pixel>> crops;
+//    for (int i = 0; i < 100; ++i)
+//        crops.push_back(jitter_image(img,rnd));
+//
+//    return crops;
+//}
+
+
+/*
+- (void) loadDataFromPath:(NSString *)dataPath {
+  
+//    if (dataPath)    {
+//        char const *pPath = [dataPath cStringUsingEncoding:NSASCIIStringEncoding];
+//        if (pPath)        {
+//            NSDate *startDate = [NSDate date];
+//            NSLog(@"주소: %s", pPath);
+//            dlib::deserialize(pPath) >> net >> sp;
+//            NSLog(@"Duration: deserialize == %f",
+//                  [[NSDate date] timeIntervalSinceDate:startDate]);
+//
+//        }
+//
+//    }
+    
+    NSURL *datUrl = [[NSBundle mainBundle] URLForResource:@"shape_predictor_5_face_landmarks" withExtension:@".dat"];
+    
+    NSLog(@"222주소: %@", datUrl.path);
+   
+    if (datUrl.path)    {
+        char const *pPath = [datUrl.path cStringUsingEncoding:NSASCIIStringEncoding];
+        if (pPath)        {
+            NSLog(@"주소: %s", pPath);
+            
+//            shape_predictor sp;
+//            deserialize("shape_predictor_5_face_landmarks.dat") >> sp;
+            anet_type net;
+            deserialize(pPath) >> net;
+            
+        }
+        
+    }
+}
+*/
+
 
 @end

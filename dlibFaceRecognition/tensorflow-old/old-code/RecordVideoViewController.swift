@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Toast
+
 
 class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
     
@@ -19,15 +21,17 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     var movieOutput = AVCaptureMovieFileOutput()
     
-    var timeRecord = 1 //5
+    var timeRecord = 3
     var timer = Timer()
-    
     var outputVideoUrl: URL?
+    let wrapper = DlibWrapper()
+    var videoImage: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        saveFaceRecognition()
-        
+//        saveFaceRecognition(title: "shape_predictor_5_face_landmarks")
+//        saveFaceRecognition(title: "dlib_face_recognition_resnet_model_v1")
+       
         captureSession = AVCaptureSession()
         captureSession.sessionPreset = .high
         guard let frontCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: AVMediaType.video, position: .front)
@@ -54,37 +58,38 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
         self.captureSession.stopRunning()
     }
     
-    func saveFaceRecognition() {
-        let fileManager = FileManager.default
-        let directoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        
-//        let directoryURL = documentsURL.appendingPathComponent("Test_Folder")
-        
-        do {
-            // 3-1. 폴더 생성
-            try fileManager.createDirectory(atPath: directoryURL.path, withIntermediateDirectories: false, attributes: nil)
-        } catch let e {
-            // 3-2. 오류 처리
-            print(e.localizedDescription)
-        }
-        
-        // 4. 저장할 파일 이름 (확장자 필수)
-        let helloPath = directoryURL.appendingPathComponent("shape_predictor_5_face_landmarks.dat")
-        // 파일에 들어갈 string
-        let text = ""
-        
-        do {
-            // 4-1. 파일 생성
-            try text.write(to: helloPath, atomically: false, encoding: .utf8)
-        }catch let error as NSError {
-            print("Error creating File : \(error.localizedDescription)")
-        }
-        
-    }
+//    func saveFaceRecognition(title: String) {
+//        let data: Data
+//
+//        do {
+//            // xcode 내 파일 읽기
+//            guard let path = Bundle.main.path(forResource: title, ofType: ".dat") else {return}
+//            print("xcode 내 파일 path: ", path)
+//            let fromUrl = URL(string : "file://"+path)
+//            data = try Data(contentsOf: fromUrl!)
+//
+//            let str = try String(contentsOf: fromUrl!)
+//            print(str)
+//
+//            // 폰에 저장
+//            let fileManager = FileManager.default
+//            let directoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+//            print(directoryURL.absoluteString)
+//            //        let directoryURL = documentsURL.appendingPathComponent("Test_Folder")
+////            try fileManager.createDirectory(atPath: directoryURL.path, withIntermediateDirectories: false, attributes: nil)
+//            let toPath = directoryURL.appendingPathComponent(title+".dat")
+//            try data.write(to: toPath)
+//            wrapper?.loadData(fromPath: title)//toPath.absoluteString)
+//        } catch let e {
+//            print(e.localizedDescription)
+//        }
+//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openFillName" {
             let vc = segue.destination as! AddNameViewController
             vc.videoURL = outputVideoUrl
+            vc.videoImage = videoImage
+           
         }
     }
     
@@ -97,16 +102,51 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
             desLabel.text = "Move your head slowly!"
             startButton.isEnabled = false
             captureSession.addOutput(movieOutput)
-            let paths = documentDirectory.appendingPathComponent(String(Int(Date().timeIntervalSince1970))+"_output.mov")
+            let paths = documentDirectory.appendingPathComponent("output.mov")
             try? FileManager.default.removeItem(at: paths)
             movieOutput.startRecording(to: paths, recordingDelegate: self)
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
         }
         else {
             self.captureSession.stopRunning()
-            self.performSegue(withIdentifier: "openFillName", sender: nil)
+            self.view.makeToastActivity(.center)
+            DispatchQueue.main.async {
+                self.featureExtract()
+//                self.performSegue(withIdentifier: "openFillName", sender: nil)
+            }
+           
         }
         
+    }
+    
+    private func featureExtract() {
+        if let url = outputVideoUrl {
+            self.getThumbnailImageFromVideoUrl(url: url) { (list) in
+//                self.videoImage = list.first as! UIImage
+                let totalStart = DispatchTime.now()
+                for item in list{
+                    ImageFileManager.shared.saveImage(image: item, name: "face.jpeg") { url in
+                        print("=== url: \(url) ====")
+                        print(url)
+                        let urlString = UnsafeMutablePointer<CChar>(mutating: (url as NSString).utf8String)!
+
+                       let result = self.wrapper?.executeFaceRecognize()
+                        
+                        if let swiftArray = (result ?? []) as NSArray as? [String] {
+                            // Use swiftArray here
+                            print("❤️", swiftArray)
+                            self.view.hideAllToasts()
+                            self.view.makeToast("feature extract: \(swiftArray)")
+                        }
+                        
+                    }
+                }
+                
+                let totalEnd = DispatchTime.now()
+                        print("total 시간: \(totalEnd.uptimeNanoseconds - totalStart.uptimeNanoseconds)")
+                self.view.hideAllToasts()
+            }
+        }
     }
     
     @objc func timerAction() {
@@ -116,7 +156,7 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
             self.movieOutput.stopRecording()
             timer.invalidate()
             startButton.isEnabled = true
-            timeRecord = 1 //5
+            timeRecord = 3
             startButton.setTitle("Done", for: .normal)
         }
     }
@@ -145,6 +185,41 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
         print("FINISHED RECORD VIDEO")
         if error == nil {
             outputVideoUrl = outputFileURL
+        }
+    }
+    
+    
+    func getThumbnailImageFromVideoUrl(url: URL, completion: @escaping ((_ image: [UIImage?])->Void)) {
+        var list: [UIImage?] = []
+        
+        DispatchQueue.global().async {
+            let asset = AVAsset(url: url)
+            let avAssetImageGenerator = AVAssetImageGenerator(asset: asset)
+            avAssetImageGenerator.appliesPreferredTrackTransform = true
+           
+            do {
+                let thumnailTime = CMTimeMake(value: 1, timescale: 2)
+                let cgThumbImage = try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)
+                list.append(UIImage(cgImage: cgThumbImage))
+                
+                let thumnailTime1 = CMTimeMake(value: 3, timescale: 2)
+                let cgThumbImage1 = try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)
+                list.append(UIImage(cgImage: cgThumbImage1))
+                
+                let thumnailTime2 = CMTimeMake(value: 3, timescale: 2)
+                let cgThumbImage2 = try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)
+                list.append(UIImage(cgImage: cgThumbImage2))
+                
+                DispatchQueue.main.async {
+                    completion(list)
+                }
+            } catch {
+                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    completion([])
+                }
+            }
+            
         }
     }
 }

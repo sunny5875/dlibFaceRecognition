@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D629D321299F60670077C607 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D629D320299F60670077C607 /* Toast */; };
 		D6E3B94E299E07D20075CBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B94D299E07D20075CBB4 /* AppDelegate.swift */; };
 		D6E3B950299E07D20075CBB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B94F299E07D20075CBB4 /* SceneDelegate.swift */; };
 		D6E3B955299E07D20075CBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E3B953299E07D20075CBB4 /* Main.storyboard */; };
@@ -16,11 +17,8 @@
 		D6E3B96F299E07D30075CBB4 /* dlibFaceRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B96E299E07D30075CBB4 /* dlibFaceRecognitionUITests.swift */; };
 		D6E3B971299E07D30075CBB4 /* dlibFaceRecognitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B970299E07D30075CBB4 /* dlibFaceRecognitionUITestsLaunchTests.swift */; };
 		D6E3C87F299E09900075CBB4 /* DlibWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B97F299E09880075CBB4 /* DlibWrapper.mm */; };
-		D6E3CA2B299E09900075CBB4 /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = D6E3BF99299E09890075CBB4 /* shape_predictor_68_face_landmarks.dat */; };
 		D6E3CA2C299E09900075CBB4 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6E3BF9B299E09890075CBB4 /* test.cpp */; };
 		D6E3CA2D299E09900075CBB4 /* 2007_007763.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E3BF9C299E09890075CBB4 /* 2007_007763.jpg */; };
-		D6E3CE26299E09A50075CBB4 /* dlib_face_recognition_resnet_model_v1.dat in Resources */ = {isa = PBXBuildFile; fileRef = D6E3C86A299E098C0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */; };
-		D6E3CE27299E09A50075CBB4 /* shape_predictor_5_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = D6E3C86B299E098C0075CBB4 /* shape_predictor_5_face_landmarks.dat */; };
 		D6E3CE53299E09AE0075CBB4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3CE2A299E09AD0075CBB4 /* Global.swift */; };
 		D6E3CE54299E09AE0075CBB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6E3CE2B299E09AD0075CBB4 /* GoogleService-Info.plist */; };
 		D6E3CE55299E09AE0075CBB4 /* VectorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3CE2C299E09AD0075CBB4 /* VectorHelper.swift */; };
@@ -49,6 +47,9 @@
 		D6E3CE71299E09AE0075CBB4 /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3CE51299E09AD0075CBB4 /* RecordVideoViewController.swift */; };
 		D6E3CE74299E0BFC0075CBB4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E3CE73299E0BFC0075CBB4 /* Accelerate.framework */; };
 		D6E3CE82299E1F7A0075CBB4 /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E3CE77299E1A5A0075CBB4 /* libdlib.a */; };
+		D6E3CE84299F455D0075CBB4 /* shape_predictor_5_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = D6E3CE83299F455D0075CBB4 /* shape_predictor_5_face_landmarks.dat */; };
+		D6E3CE88299F45DB0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat in Resources */ = {isa = PBXBuildFile; fileRef = D6E3CE87299F45DB0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */; };
+		D6E3CE8A299F47E00075CBB4 /* hello.txt in Resources */ = {isa = PBXBuildFile; fileRef = D6E3CE89299F47E00075CBB4 /* hello.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,13 +84,10 @@
 		D6E3B970299E07D30075CBB4 /* dlibFaceRecognitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dlibFaceRecognitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6E3B97D299E097F0075CBB4 /* dlibFaceRecognition-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dlibFaceRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6E3B97F299E09880075CBB4 /* DlibWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DlibWrapper.mm; sourceTree = "<group>"; };
-		D6E3BF99299E09890075CBB4 /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
 		D6E3BF9A299E09890075CBB4 /* DlibWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DlibWrapper.h; sourceTree = "<group>"; };
 		D6E3BF9B299E09890075CBB4 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		D6E3BF9C299E09890075CBB4 /* 2007_007763.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2007_007763.jpg; sourceTree = "<group>"; };
 		D6E3BF9E299E09890075CBB4 /* test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
-		D6E3C86A299E098C0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = dlib_face_recognition_resnet_model_v1.dat; sourceTree = "<group>"; };
-		D6E3C86B299E098C0075CBB4 /* shape_predictor_5_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_5_face_landmarks.dat; sourceTree = "<group>"; };
 		D6E3CE2A299E09AD0075CBB4 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		D6E3CE2B299E09AD0075CBB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D6E3CE2C299E09AD0075CBB4 /* VectorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorHelper.swift; sourceTree = "<group>"; };
@@ -121,6 +119,9 @@
 		D6E3CE77299E1A5A0075CBB4 /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdlib.a; sourceTree = "<group>"; };
 		D6E3CE7D299E1BDC0075CBB4 /* libdlib (1).a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libdlib (1).a"; path = "dlibFaceRecognition/lib/libdlib (1).a"; sourceTree = "<group>"; };
 		D6E3CE7F299E1BF70075CBB4 /* libdlib-dlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libdlib-dlib.a"; path = "dlibFaceRecognition/lib/libdlib-dlib.a"; sourceTree = "<group>"; };
+		D6E3CE83299F455D0075CBB4 /* shape_predictor_5_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_5_face_landmarks.dat; sourceTree = "<group>"; };
+		D6E3CE87299F45DB0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = dlib_face_recognition_resnet_model_v1.dat; sourceTree = "<group>"; };
+		D6E3CE89299F47E00075CBB4 /* hello.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hello.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D629D321299F60670077C607 /* Toast in Frameworks */,
 				D6E3CE82299E1F7A0075CBB4 /* libdlib.a in Frameworks */,
 				D6E3CE74299E0BFC0075CBB4 /* Accelerate.framework in Frameworks */,
 			);
@@ -174,6 +176,9 @@
 		D6E3B94C299E07D20075CBB4 /* dlibFaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				D6E3CE89299F47E00075CBB4 /* hello.txt */,
+				D6E3CE87299F45DB0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */,
+				D6E3CE83299F455D0075CBB4 /* shape_predictor_5_face_landmarks.dat */,
 				D6E3B97D299E097F0075CBB4 /* dlibFaceRecognition-Bridging-Header.h */,
 				D6E3CE28299E09AD0075CBB4 /* tensorflow-old */,
 				D6E3B97E299E09880075CBB4 /* lib */,
@@ -209,9 +214,6 @@
 			children = (
 				D6E3CE77299E1A5A0075CBB4 /* libdlib.a */,
 				D6E3BF9C299E09890075CBB4 /* 2007_007763.jpg */,
-				D6E3BF99299E09890075CBB4 /* shape_predictor_68_face_landmarks.dat */,
-				D6E3C86A299E098C0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */,
-				D6E3C86B299E098C0075CBB4 /* shape_predictor_5_face_landmarks.dat */,
 				D6E3B97F299E09880075CBB4 /* DlibWrapper.mm */,
 				D6E3BF9A299E09890075CBB4 /* DlibWrapper.h */,
 				D6E3BF9B299E09890075CBB4 /* test.cpp */,
@@ -320,6 +322,9 @@
 			dependencies = (
 			);
 			name = dlibFaceRecognition;
+			packageProductDependencies = (
+				D629D320299F60670077C607 /* Toast */,
+			);
 			productName = dlibFaceRecognition;
 			productReference = D6E3B94A299E07D20075CBB4 /* dlibFaceRecognition.app */;
 			productType = "com.apple.product-type.application";
@@ -392,6 +397,9 @@
 				Base,
 			);
 			mainGroup = D6E3B941299E07D20075CBB4;
+			packageReferences = (
+				D629D31F299F60670077C607 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = D6E3B94B299E07D20075CBB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,12 +417,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E3CA2D299E09900075CBB4 /* 2007_007763.jpg in Resources */,
-				D6E3CE26299E09A50075CBB4 /* dlib_face_recognition_resnet_model_v1.dat in Resources */,
 				D6E3B95A299E07D30075CBB4 /* LaunchScreen.storyboard in Resources */,
-				D6E3CA2B299E09900075CBB4 /* shape_predictor_68_face_landmarks.dat in Resources */,
 				D6E3CE54299E09AE0075CBB4 /* GoogleService-Info.plist in Resources */,
+				D6E3CE8A299F47E00075CBB4 /* hello.txt in Resources */,
+				D6E3CE88299F45DB0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat in Resources */,
+				D6E3CE84299F455D0075CBB4 /* shape_predictor_5_face_landmarks.dat in Resources */,
 				D6E3B957299E07D30075CBB4 /* Assets.xcassets in Resources */,
-				D6E3CE27299E09A50075CBB4 /* shape_predictor_5_face_landmarks.dat in Resources */,
 				D6E3B955299E07D20075CBB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +689,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -736,6 +745,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -876,6 +886,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D629D31F299F60670077C607 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D629D320299F60670077C607 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D629D31F299F60670077C607 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6E3B942299E07D20075CBB4 /* Project object */;
 }
