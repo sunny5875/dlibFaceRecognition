@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 import Toast
+import Vision
 
 
 class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
     
+    @IBOutlet weak var mergeImageView: UIImageView!
     @IBOutlet weak var desLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var videoView: VideoView!
@@ -29,8 +31,6 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        saveFaceRecognition(title: "shape_predictor_5_face_landmarks")
-//        saveFaceRecognition(title: "dlib_face_recognition_resnet_model_v1")
        
         captureSession = AVCaptureSession()
         captureSession.sessionPreset = .high
@@ -57,33 +57,7 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
         super.viewWillDisappear(animated)
         self.captureSession.stopRunning()
     }
-    
-//    func saveFaceRecognition(title: String) {
-//        let data: Data
-//
-//        do {
-//            // xcode 내 파일 읽기
-//            guard let path = Bundle.main.path(forResource: title, ofType: ".dat") else {return}
-//            print("xcode 내 파일 path: ", path)
-//            let fromUrl = URL(string : "file://"+path)
-//            data = try Data(contentsOf: fromUrl!)
-//
-//            let str = try String(contentsOf: fromUrl!)
-//            print(str)
-//
-//            // 폰에 저장
-//            let fileManager = FileManager.default
-//            let directoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-//            print(directoryURL.absoluteString)
-//            //        let directoryURL = documentsURL.appendingPathComponent("Test_Folder")
-////            try fileManager.createDirectory(atPath: directoryURL.path, withIntermediateDirectories: false, attributes: nil)
-//            let toPath = directoryURL.appendingPathComponent(title+".dat")
-//            try data.write(to: toPath)
-//            wrapper?.loadData(fromPath: title)//toPath.absoluteString)
-//        } catch let e {
-//            print(e.localizedDescription)
-//        }
-//    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openFillName" {
             let vc = segue.destination as! AddNameViewController
@@ -109,44 +83,43 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
         }
         else {
             self.captureSession.stopRunning()
-            self.view.makeToastActivity(.center)
             DispatchQueue.main.async {
-                self.featureExtract()
-//                self.performSegue(withIdentifier: "openFillName", sender: nil)
+                self.view.makeToastActivity(.center)
             }
+            self.featureExtract()
+//                self.performSegue(withIdentifier: "openFillName", sender: nil)
            
         }
         
     }
     
     private func featureExtract() {
-        if let url = outputVideoUrl {
-            self.getThumbnailImageFromVideoUrl(url: url) { (list) in
-//                self.videoImage = list.first as! UIImage
-                let totalStart = DispatchTime.now()
-                for item in list{
-                    ImageFileManager.shared.saveImage(image: item, name: "face.jpeg") { url in
+            if let url = self.outputVideoUrl {
+                self.getThumbnailImageFromVideoUrl(url: url) { (image) in
+                    guard let image = image else {return}
+                    ImageFileManager.shared.saveImage(image: image, name: "face.jpeg") { url in
                         print("=== url: \(url) ====")
                         print(url)
                         let urlString = UnsafeMutablePointer<CChar>(mutating: (url as NSString).utf8String)!
-
-                       let result = self.wrapper?.executeFaceRecognize()
                         
-                        if let swiftArray = (result ?? []) as NSArray as? [String] {
-                            // Use swiftArray here
-                            print("❤️", swiftArray)
-                            self.view.hideAllToasts()
-                            self.view.makeToast("feature extract: \(swiftArray)")
+                        DispatchQueue.global().async {
+                            let eachStart = DispatchTime.now()
+                            let result = self.wrapper?.executeFaceRecognize()
+                            let endStart = DispatchTime.now()
+                            print("total 시간: \(endStart.uptimeNanoseconds - eachStart.uptimeNanoseconds)")
+                            
+                            if let swiftArray = (result ?? []) as NSArray as? [String] {
+                                print("❤️", swiftArray)
+                                DispatchQueue.main.async {
+                                    self.view.hideAllToasts()
+                                    self.view.makeToast("feature extract result count: \(swiftArray.count)")
+                                }
+                            }
                         }
                         
                     }
                 }
-                
-                let totalEnd = DispatchTime.now()
-                        print("total 시간: \(totalEnd.uptimeNanoseconds - totalStart.uptimeNanoseconds)")
-                self.view.hideAllToasts()
             }
-        }
     }
     
     @objc func timerAction() {
@@ -189,9 +162,8 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
     }
     
     
-    func getThumbnailImageFromVideoUrl(url: URL, completion: @escaping ((_ image: [UIImage?])->Void)) {
-        var list: [UIImage?] = []
-        
+    func getThumbnailImageFromVideoUrl(url: URL, completion: @escaping ((_ image: UIImage?)->Void)) {
+         
         DispatchQueue.global().async {
             let asset = AVAsset(url: url)
             let avAssetImageGenerator = AVAssetImageGenerator(asset: asset)
@@ -199,27 +171,72 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
            
             do {
                 let thumnailTime = CMTimeMake(value: 1, timescale: 2)
-                let cgThumbImage = try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)
-                list.append(UIImage(cgImage: cgThumbImage))
-                
+                let cgThumbImage = self.cropImage(image: UIImage(cgImage: try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)))
+               
+
                 let thumnailTime1 = CMTimeMake(value: 3, timescale: 2)
-                let cgThumbImage1 = try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)
-                list.append(UIImage(cgImage: cgThumbImage1))
-                
+                let cgThumbImage1 = self.cropImage(image:UIImage(cgImage: try avAssetImageGenerator.copyCGImage(at: thumnailTime1, actualTime: nil)))
+              
                 let thumnailTime2 = CMTimeMake(value: 3, timescale: 2)
-                let cgThumbImage2 = try avAssetImageGenerator.copyCGImage(at: thumnailTime, actualTime: nil)
-                list.append(UIImage(cgImage: cgThumbImage2))
-                
+                let cgThumbImage2 = self.cropImage(image:UIImage(cgImage: try avAssetImageGenerator.copyCGImage(at: thumnailTime2, actualTime: nil)))
+               
+                let size = CGSizeMake(cgThumbImage.size.width + cgThumbImage1.size.width + cgThumbImage2.size.width, cgThumbImage.size.height)
+
+               UIGraphicsBeginImageContext(size)
+                cgThumbImage.draw(in: CGRectMake(0,
+                                                   0,
+                                                   cgThumbImage.size.width,
+                                                   cgThumbImage.size.height
+                                                          ))
+                cgThumbImage1.draw(in: CGRectMake(cgThumbImage.size.width,
+                                                    0,
+                                                    cgThumbImage1.size.width,
+                                                    cgThumbImage1.size.height
+                                                           ))
+                cgThumbImage2.draw(in: CGRectMake(cgThumbImage.size.width + cgThumbImage1.size.width,
+                                                    0,
+                                                    cgThumbImage2.size.width,
+                                                    cgThumbImage2.size.height
+                                                   ))
+               let finalImage = UIGraphicsGetImageFromCurrentImageContext()
+               UIGraphicsEndImageContext()
                 DispatchQueue.main.async {
-                    completion(list)
+                    self.mergeImageView.image = finalImage
                 }
+                completion(finalImage)
+               
             } catch {
                 print(error.localizedDescription)
-                DispatchQueue.main.async {
-                    completion([])
-                }
+                completion(nil)
             }
             
         }
+    }
+    
+    func cropImage(image: UIImage) -> UIImage {
+        guard let cgImage = image.cgImage else { return UIImage()}
+        let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+        let faceDetectionRequest = VNDetectFaceRectanglesRequest()
+        try? requestHandler.perform([faceDetectionRequest])
+        guard let faceDetectionResults = faceDetectionRequest.results as? [VNFaceObservation] else { return UIImage()}
+
+        for observation in faceDetectionResults {
+            let boundingBox = observation.boundingBox
+            let imageWidth = CGFloat(cgImage.width)
+            let imageHeight = CGFloat(cgImage.height)
+            
+            // 이미지 좌표계를 Vision 좌표계로 변환합니다.
+            let rect = CGRect(x: boundingBox.origin.x * imageWidth,
+                              y: (1 - boundingBox.origin.y - boundingBox.size.height) * imageHeight,
+                              width: boundingBox.size.width * imageWidth,
+                              height: boundingBox.size.height * imageHeight)
+            
+            // crop된 이미지를 생성합니다.
+            if let croppedImage = cgImage.cropping(to: rect) {
+                let croppedUIImage = UIImage(cgImage: croppedImage)
+                return croppedUIImage
+            }
+        }
+        return UIImage()
     }
 }

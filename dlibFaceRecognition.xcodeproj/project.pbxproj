@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D629D321299F60670077C607 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D629D320299F60670077C607 /* Toast */; };
+		D629D32529A36E4D0077C607 /* chatGPTFeatrueExtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D629D32429A36E4D0077C607 /* chatGPTFeatrueExtractViewController.swift */; };
+		D629D32729A36F040077C607 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D629D32629A36F040077C607 /* Vision.framework */; };
 		D6E3B94E299E07D20075CBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B94D299E07D20075CBB4 /* AppDelegate.swift */; };
 		D6E3B950299E07D20075CBB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3B94F299E07D20075CBB4 /* SceneDelegate.swift */; };
 		D6E3B955299E07D20075CBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E3B953299E07D20075CBB4 /* Main.storyboard */; };
@@ -70,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D629D32429A36E4D0077C607 /* chatGPTFeatrueExtractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatGPTFeatrueExtractViewController.swift; sourceTree = "<group>"; };
+		D629D32629A36F040077C607 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 		D6E3B94A299E07D20075CBB4 /* dlibFaceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlibFaceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E3B94D299E07D20075CBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6E3B94F299E07D20075CBB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D629D32729A36F040077C607 /* Vision.framework in Frameworks */,
 				D629D321299F60670077C607 /* Toast in Frameworks */,
 				D6E3CE82299E1F7A0075CBB4 /* libdlib.a in Frameworks */,
 				D6E3CE74299E0BFC0075CBB4 /* Accelerate.framework in Frameworks */,
@@ -180,7 +185,7 @@
 				D6E3CE87299F45DB0075CBB4 /* dlib_face_recognition_resnet_model_v1.dat */,
 				D6E3CE83299F455D0075CBB4 /* shape_predictor_5_face_landmarks.dat */,
 				D6E3B97D299E097F0075CBB4 /* dlibFaceRecognition-Bridging-Header.h */,
-				D6E3CE28299E09AD0075CBB4 /* tensorflow-old */,
+				D6E3CE28299E09AD0075CBB4 /* tensorflow-old(notRemoveForUI) */,
 				D6E3B97E299E09880075CBB4 /* lib */,
 				D6E3B94D299E07D20075CBB4 /* AppDelegate.swift */,
 				D6E3B94F299E07D20075CBB4 /* SceneDelegate.swift */,
@@ -188,6 +193,7 @@
 				D6E3B956299E07D30075CBB4 /* Assets.xcassets */,
 				D6E3B958299E07D30075CBB4 /* LaunchScreen.storyboard */,
 				D6E3B95B299E07D30075CBB4 /* Info.plist */,
+				D629D32429A36E4D0077C607 /* chatGPTFeatrueExtractViewController.swift */,
 			);
 			path = dlibFaceRecognition;
 			sourceTree = "<group>";
@@ -222,7 +228,7 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
-		D6E3CE28299E09AD0075CBB4 /* tensorflow-old */ = {
+		D6E3CE28299E09AD0075CBB4 /* tensorflow-old(notRemoveForUI) */ = {
 			isa = PBXGroup;
 			children = (
 				D6E3CE29299E09AD0075CBB4 /* Core */,
@@ -230,7 +236,7 @@
 				D6E3CE4B299E09AD0075CBB4 /* old-code */,
 				D6E3CE52299E09AD0075CBB4 /* faceRecognition-Bridging-Header.h */,
 			);
-			path = "tensorflow-old";
+			path = "tensorflow-old(notRemoveForUI)";
 			sourceTree = "<group>";
 		};
 		D6E3CE29299E09AD0075CBB4 /* Core */ = {
@@ -299,6 +305,7 @@
 		D6E3CE72299E0BFC0075CBB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D629D32629A36F040077C607 /* Vision.framework */,
 				D6E3CE7F299E1BF70075CBB4 /* libdlib-dlib.a */,
 				D6E3CE7D299E1BDC0075CBB4 /* libdlib (1).a */,
 				D6E3CE73299E0BFC0075CBB4 /* Accelerate.framework */,
@@ -477,6 +484,7 @@
 				D6E3CE6F299E09AE0075CBB4 /* VideoView.swift in Sources */,
 				D6E3CE65299E09AE0075CBB4 /* Date.swift in Sources */,
 				D6E3CE67299E09AE0075CBB4 /* Image+Resize.swift in Sources */,
+				D629D32529A36E4D0077C607 /* chatGPTFeatrueExtractViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +692,8 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				INFOPLIST_FILE = dlibFaceRecognition/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -702,7 +712,7 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.subin.dlibFaceRecognition.dlibFaceRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subin.dlibFaceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -740,6 +750,8 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				INFOPLIST_FILE = dlibFaceRecognition/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -758,7 +770,7 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.subin.dlibFaceRecognition.dlibFaceRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subin.dlibFaceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -13,14 +13,10 @@
 #include "test.hpp"
 
 // for extract
-#include "dlib/image_transforms.h"
-
 #include "dlib/dnn.h"
 #include "dlib/clustering.h"
 #include "dlib/string.h"
 #include "dlib/image_processing/frontal_face_detector.h"
-
-#import "test.hpp"
 
 
 using namespace dlib;
@@ -148,40 +144,7 @@ using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
         }
     }
 
-//    dlib::array2d<dlib::rgb_pixel> img2;
-//
-//    CVImageBufferRef imageBuffer2 = CMSampleBufferGetImageBuffer(sampleBuffer);
-//    CVPixelBufferLockBaseAddress(imageBuffer2, kCVPixelBufferLock_ReadOnly);
-//
-//    size_t width2 = CVPixelBufferGetWidth(imageBuffer2);
-//    size_t height2 = CVPixelBufferGetHeight(imageBuffer2);
-//    char *baseBuffer2 = (char *)CVPixelBufferGetBaseAddress(imageBuffer2);
-//    // set_size expects rows, cols format
-//    img2.set_size(height2, width2);
-//
-//    // copy samplebuffer image data into dlib image format
-//    img2.reset();
-//    long position2 = 0;
-//    while (img2.move_next()) {
-//        dlib::rgb_pixel& pixel = img2.element();
-//
-//        // assuming bgra format here
-//        long bufferLocation = position2 * 4; //(row * width + column) * 4;
-//        char r = baseBuffer2[bufferLocation];
-//        char g = baseBuffer2[bufferLocation + 1];
-//        char b = baseBuffer2[bufferLocation + 2];
-//
-//        dlib::rgb_pixel newpixel(r,g,b);
-//        pixel = newpixel;
-//        position2++;
-//    }
-//
-//    dlib::array2d<dlib::matrix<float,31,1>> hog;
-//    extract_fhog_features(img2, hog);
-//    NSLog(@"hog image has %ld rows and %ld columns", hog.nr(), hog.nc());
 
-    
-    
     // lets put everything back where it belongs
     CVPixelBufferLockBaseAddress(imageBuffer, 0);
 
@@ -264,7 +227,8 @@ using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
                 load_image(img, pPath);
             }
         }
-      
+        
+        NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
         std::vector<matrix<rgb_pixel>> faces;
         for (auto face : detector(img))
         {
@@ -273,14 +237,21 @@ using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
             extract_image_chip(img, get_face_chip_details(shape,150,0.25), face_chip);
             faces.push_back(move(face_chip));
         }
-
+        
         if (faces.size() == 0)
         {
-            cout << "No faces found in image!" << endl;
+            cout << "Not faces found in image!" << endl;
             return arrayString;
         }
+        
+        cout << faces.size() << endl;
+        
+        
+         NSTimeInterval endtimeStamp = [[NSDate date] timeIntervalSince1970];
 
         std::vector<matrix<float,0,1>> face_descriptors = net(faces);
+        
+        
 //        std::vector<sample_pair> edges;
 //        for (size_t i = 0; i < face_descriptors.size(); ++i)
 //        {
@@ -292,18 +263,24 @@ using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
 //        }
 //        std::vector<unsigned long> labels;
 //        const auto num_clusters = chinese_whispers(edges, labels);
-        
-        matrix_op<op_trans<dlib::matrix<float, 0, 1>>> result = trans(face_descriptors[0]);
-
 //        cout << "number of people found in the image: "<< num_clusters << endl;
-        cout << "face descriptor for one face: " << result << endl;
-//        matrix<float,0,1> face_descriptor = mean(mat(net(jitter));
-//        cout << "jittered face descriptor for one face: " << trans(face_descriptor) << endl;
         
-        for(auto it = result.begin(); it != result.end(); ++it) {
-            NSString* str = [NSString stringWithFormat:@"%.7f", *it];
-            [arrayString addObject:str];
+        
+        for(int i = 0; i < faces.size(); i++) {
+            matrix_op<op_trans<dlib::matrix<float, 0, 1>>> result = trans(face_descriptors[i]);
+
+            cout << "face descriptor for one face: " << result << endl;
+            
+            for(auto it = result.begin(); it != result.end(); ++it) {
+                NSString* str = [NSString stringWithFormat:@"%.7f", *it];
+                [arrayString addObject:str];
+            }
         }
+        
+        NSTimeInterval endtimeStamp1 = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"face detector time: %f", endtimeStamp-timeStamp);
+        NSLog(@"net time: %f", endtimeStamp1-endtimeStamp);
+      
         return arrayString;
 
     }
@@ -315,58 +292,8 @@ using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
 }
 
 
-//
-//std::vector<matrix<rgb_pixel>> jitter_image(
-//    const matrix<rgb_pixel>& img
-//);
-//
-//
-//std::vector<matrix<rgb_pixel>> jitter_image(const matrix<rgb_pixel>& img) {
-//    thread_local dlib::rand rnd;
-//
-//    std::vector<matrix<rgb_pixel>> crops;
-//    for (int i = 0; i < 100; ++i)
-//        crops.push_back(jitter_image(img,rnd));
-//
-//    return crops;
-//}
 
 
-/*
-- (void) loadDataFromPath:(NSString *)dataPath {
-  
-//    if (dataPath)    {
-//        char const *pPath = [dataPath cStringUsingEncoding:NSASCIIStringEncoding];
-//        if (pPath)        {
-//            NSDate *startDate = [NSDate date];
-//            NSLog(@"주소: %s", pPath);
-//            dlib::deserialize(pPath) >> net >> sp;
-//            NSLog(@"Duration: deserialize == %f",
-//                  [[NSDate date] timeIntervalSinceDate:startDate]);
-//
-//        }
-//
-//    }
-    
-    NSURL *datUrl = [[NSBundle mainBundle] URLForResource:@"shape_predictor_5_face_landmarks" withExtension:@".dat"];
-    
-    NSLog(@"222주소: %@", datUrl.path);
-   
-    if (datUrl.path)    {
-        char const *pPath = [datUrl.path cStringUsingEncoding:NSASCIIStringEncoding];
-        if (pPath)        {
-            NSLog(@"주소: %s", pPath);
-            
-//            shape_predictor sp;
-//            deserialize("shape_predictor_5_face_landmarks.dat") >> sp;
-            anet_type net;
-            deserialize(pPath) >> net;
-            
-        }
-        
-    }
-}
-*/
 
 
 @end
