@@ -8,14 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CoreMedia.h>
 
-//#import "test.hpp"
-
-
 @interface DlibWrapper : NSObject
-
 - (instancetype)init;
 - (void)doWorkOnSampleBuffer:(CMSampleBufferRef)sampleBuffer inRects:(NSArray<NSValue *> *)rects;
 - (void)prepare;
 - (NSMutableArray*)executeFaceRecognize;
-
+- (NSMutableArray*)checkUserValid;
 @end

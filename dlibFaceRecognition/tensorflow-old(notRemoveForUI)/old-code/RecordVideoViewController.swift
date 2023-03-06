@@ -50,9 +50,12 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
         }
         catch let error  {
             print("Error Unable to initialize front camera:  \(error.localizedDescription)")
-        }
+        } 
         
     }
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.wrapper?.checkUserValid()
+//    }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.captureSession.stopRunning()
@@ -109,7 +112,7 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
                             print("total 시간: \(endStart.uptimeNanoseconds - eachStart.uptimeNanoseconds)")
                             
                             if let swiftArray = (result ?? []) as NSArray as? [String] {
-                                print("❤️", swiftArray)
+                                print("❤️", swiftArray.count)
                                 DispatchQueue.main.async {
                                     self.view.hideAllToasts()
                                     self.view.makeToast("feature extract result count: \(swiftArray.count)")
