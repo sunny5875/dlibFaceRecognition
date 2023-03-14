@@ -83,8 +83,16 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
             try? FileManager.default.removeItem(at: paths)
             movieOutput.startRecording(to: paths, recordingDelegate: self)
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        }
-        else {
+        } else if startButton.titleLabel?.text == "ReStart" {
+            desLabel.text = "Move your head slowly!"
+            startButton.isEnabled = false
+            setupLivePreview()
+//            captureSession.addOutput(movieOutput)
+            let paths = documentDirectory.appendingPathComponent("output.mov")
+            try? FileManager.default.removeItem(at: paths)
+            movieOutput.startRecording(to: paths, recordingDelegate: self)
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        } else {
             self.captureSession.stopRunning()
             DispatchQueue.main.async {
                 self.view.makeToastActivity(.center)
@@ -114,8 +122,11 @@ class RecordVideoViewController: UIViewController, AVCaptureFileOutputRecordingD
                             if let swiftArray = (result ?? []) as NSArray as? [String] {
                                 print("❤️", swiftArray.count)
                                 DispatchQueue.main.async {
-                                    self.view.hideAllToasts()
+                                    self.view.hideAllToasts(includeActivity: true)
                                     self.view.makeToast("feature extract result count: \(swiftArray.count)")
+                                    if swiftArray.count != 128 * 3 {
+                                        self.startButton.setTitle("ReStart", for: .normal)
+                                    }
                                 }
                             }
                         }
